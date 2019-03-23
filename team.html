@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TEDxIGDTU</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link rel="apple-touch-icon" sizes="57x57" href="logos/IMG_2792.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="logos/IMG_2792.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="logos/IMG_2792.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="logos/IMG_2792.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="logos/IMG_2792.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="logos/IMG_2792.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="logos/IMG_2792.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="logos/IMG_2792.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="logos/IMG_2792.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="logos/IMG_2792.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="logos/IMG_2792.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="logos/IMG_2792.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="logos/IMG_2792.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="team_style.css" rel="stylesheet"> <!-- Team CSS -->
+  <link href="animate.min.css" rel="stylesheet"> <!-- Animations CSS -->
+  <style class="cp-pen-styles">
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+html, body {
+  font-family: 'Poppins', sans-serif;
+  padding:0;
+    	margin:0;
+    	background-color:#fff;
+}
+.navbar {
+  padding: 0.8rem;
+}
+.navbar-nav li {
+  padding-right: 20px;
+}
+.nav-link {
+  font-size: 1.1em !important;
+}
+#ticketModal .modal-dialog {
+      max-width: 30em;
+      margin: 4em auto;
+}
+#ticketModal .modal-body {
+  position: relative;
+  padding: 1.3em;
+}
+#ticketModal .close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+.lead {
+  color: gray;
+  text-align: justify;
+}
+.padding {
+  padding-bottom: 1rem;
+}
+.welcome {
+  width: 75;
+  margin: 0 auto;
+  padding-top: 1rem; 
+}
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem; 
+}
+.title {
+	color: red;
+}
+.about__info {
+	height: 17%;
+}
+.bioText {
+	margin-top: 3em;
+}
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-linkedin {
+  color: #0e76a8;
+}
+.fa-google-plus-g {
+  color: #dd4b39;
+}
+.fa-instagram {
+  color: #bc2a8d;
+}
+.fa-youtube {
+  color: #bb0000;
+}
+.fa-facebook:hover, 
+.fa-linkedin:hover, 
+.fa-google-plus-g:hover,
+.fa-instagram:hover,
+.fa-youtube:hover {
+  color: #d5d5d5;
+}
+.input-prepend input {
+  width: 20em;
+}
+.fa-mobile {
+  font-size: 3.5em;
+  padding: 0.1rem;
+}
+footer {
+  background-color: BLACK;
+  color: #d5d5d5;
+  padding-top: 2rem;
+  overflow: hidden;
+} 
+hr.light {
+  border: 1px solid #d5d5d5;
+  width:75%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+hr.light-100 {
+  border: 1px solid #d5d5d5;
+  width:100%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #bdc3c7;
+  opacity: 0.9;
+  width: 3em;
+  height: 3em;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.fa-angle-double-up {
+  color: #e74c3c;
+  margin: 0;
+  position: relative;
+  left: 0.9em;
+  top: 0.8em;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top:hover {
+  background: #7f8c8d;
+}
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 200%;
+  }
+  .socail a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .display-4 {
+    font-size: 160%;
+  }
+  .socail a {
+    font-size: 2em;
+    padding: 0.7rem;
+  }
+}
+  	@media screen and (max-width: 800px) {
+			.logo {
+				height: 25%;
+				width: 80%;
+			}
+			.welcome {
+				padding-top: 0;
+			}
+			.social a {
+				font-size: 2.5em;
+				padding: 0.6rem;
+			}
+    	#ticketModal .modal-dialog {
+      	max-width: 20em;
+      	margin: 5em auto;
+			}
+			.about__section {
+				text-align: center;
+				width: 100%;
+			}
+			.about__info {
+				text-align: center;
+				height: 18%;
+			}
+		}
+		@media screen and (max-width: 600px) {
+			.logo {
+      			height: 25%;
+      			width: 80%;
+    		}
+    		.welcome {
+      			padding-top: 0vh;
+    		}
+    		#ticketModal .modal-dialog {
+      		max-width: 20em;
+      		margin: 5em auto;
+				}
+    		.social a {
+				font-size: 2.5em;
+				padding: 0.4rem;
+			}
+			.about__section {
+				text-align: center;
+				width: 100%;
+			}
+			.about__info {
+				text-align: center;
+				height: 18%;
+			}
+    	}
+@media screen and (max-width: 800px) {
+    .navbar-brand {
+      height: 15%;
+      width: 50%;
+    }
+    .lead {
+      font-size: 90%;
+    }
+    .welcome {
+      padding-top: 0;
+    }
+    .social a {
+        font-size: 2.5em;
+        padding: 0.4rem;
+      }
+}
+@media screen and (max-width: 600px) {
+    .navbar-brand {
+      height: 15%;
+      width: 50%;
+    }
+    .lead {
+      font-size: 90%;
+    }
+    .welcome {
+      padding-top: 0vh;
+    }
+    #ticketModal .modal-dialog {
+      	max-width: 300px;
+      	margin: 5em auto;
+	}
+    .social a {
+        font-size: 2.5em;
+        padding: 0.4rem;
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px)  {
+        .navbar {
+          padding: 0;
+        }
+        .navbar-brand {
+            height: 60%;
+            width: 70%;
+        }
+.navbar-nav li {
+  padding-right: 0.3px;
+}
+.nav-link {
+  font-size: 1.4em !important;
+}
+        .padding {
+          padding-top: 0.5em;
+        }
+        .last {
+          font-size: 180%;
+        }
+    .display-4 {
+    font-size: 300%;
+  }
+        .logo {
+            height: 10%;
+            width: 50%;
+        }
+        .lead {
+            font-size: 130%;
+        }
+        .about_slot .name {
+        	font-size: 1.5em;
+        }
+        .about_slot .title {
+        	font-size: 1em;
+        }
+        .social a {
+            font-size: 2.8em;
+            padding: 0.6rem;
+        } 
+      }
+      @media screen and (min-width: 1200px) {
+      	.about__info .name {
+        	font-size: 1.5em;
+        }
+        .about__info .title {
+        	font-size: 1em;
+        }
+        .bioText {
+    			font-size: 0.9em;
+  			}
+      }     
+@media screen and (min-width: 320px) and (max-width: 500px) {
+	#ticketModal .modal-dialog {
+      	max-width: 15em;
+      	margin: 3em auto;
+	}
+}
+@media screen and (min-width: 360px) and (max-width: 600px) {
+	#ticketModal .modal-dialog {
+      	max-width: 18em;
+      	margin: 5em auto;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+	#ticketModal .modal-dialog {
+      	max-width: 30em;
+      	margin: 4em auto;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+	#ticketModal .modal-dialog {
+      	max-width: 35em;
+      	margin: 4em auto;
+	}
+}
+  </style>
+</head>
+<body style="background-color: black; min-height: 100%;">
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-dark bg-black fixed-top animated slow slideInDown" style="background-color: black;">
+		<div class="container-fluid">
+			<a href="index.php" class="navbar-brand" title="Go to TEDxIGDTU homepage"><img class="img-fluid logo" src="logos/IMG_2792.png" alt="TEDxIGDTU logo" width="20%" height="5%"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link tab" href="about.html">About<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link tab" href="theme.html">Theme</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link tab" href="events.html">Events</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link tab" href="https://tedxigdtu.wordpress.com/" target="_blank">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link tab" href="speakers.html">Speakers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link tab" href="team.html">Team</a>
+					</li>
+          <!--<li class="nav-item">
+            <a class="nav-link tab" href="#sponsors">Sponsors</a>
+          </li>
+          -->
+          
+					<li class="nav-item">
+						<a class="nav-link tab" href="#contact">Contact</a>
+					</li>
+          <li class="nav-item">
+            <a class="nav-link tab" href="positions.html">Positions</a>
+          </li>
+					<li>
+			<button class="btn btn-secondary" ><a class="nav-link tab" href="ticket.php">Get Tickets</a></button>		</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="padding"></div>
+	<div class="padding"></div>
+	<div class="padding"></div>
+	<div class="padding"></div>
+
+	<!-- Modal -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="modal fade" tabindex="-1" id="ticketModal" data-keyboard="false" data-backdrop="static">
+					<div class="modal-dialog modal-md">
+						<div class="modal-content">
+							<form method="POST" action="register.php">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title text-center">TEDxIGDTU on 23<sup>rd</sup> January, 2019</h4>
+								</div>
+								<div class="modal-body">
+									 <!--<div class="form-group">
+                    <div class="input-group-addon mb-2 mr-sm-2 mb-sm-0" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+                    <input class="form-control" placeholder="Enter Full Name"name="Name" type="text" id="inputUserName" pattern="^[a-zA-Z ]{2,30}$" title="Must contain only letters" required="Please enter the details"/>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group-addon mb-2 mr-sm-2 mb-sm-0" style="width: 2.6rem"><i class="fa fa-at"></i></div>
+                    <input class="form-control" placeholder="Enter Email Id"name="Email" type="text" id="req" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Provide the correct email" required="Please enter the details"/>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group-addon mb-2 mr-sm-2 mb-sm-0" style="width: 2.6rem"><i class="fa fa-phone"></i></div>
+                    <input class="form-control" placeholder="Enter Phone Number" name="Phone_Number" type="tel" id="inputNumber" pattern="^(7|8|9)\d{9}$" title="Must contain only digits" required="Please enter the details"/>
+                  </div>-->
+                  Registration Starts on 3rd January    
+                </div>
+                <!--<div class="modal-footer">
+                  <button type="submit" class="btn btn-danger">Submit</button>
+                </div>-->
+              
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Specificity container -->
+	<div class="container-fluid padding">
+  <div class="about__section pt-4">  
+    <div style="background-image:url('http://placekitten.com/326/326');"></div>
+  <a href="javascript:void(0);" title="Ishani Pandey - Licensee and Curator"><div class="about__slot">
+    <div class="headshot"  onclick="biograph(this.parentNode);" style="background-image:url('photos/ishani.jpg');"></div>
+
+  <div class="about__info">
+  <h4 class="name">Ishani Pandey</h4>
+  <h5 class="title">Licensee and Curator</h5>
+  </div>
+      <div class="bioText">A versatile personality who loves to explore new arenas and to add something new to the college always through a wonderful mix of passion and creativity.
+</div>
+
+  </div></a><a href="javascript:void(0);" title="Mehar Kaur - Co-Curator"><div class="about__slot">
+    <div class="headshot" onclick="biograph(this.parentNode);" style="background-image:url('photos/mehar.jpg');"></div>
+
+  <div class="about__info">
+  <h4 class="name">Mehar Kaur</h4>
+  <h5 class="title">Co-Curator</h5>
+  </div>
+    <div class="bioText"><blockquote>Don’t worry about failures, worry about the chances you miss when you don’t even try!</blockquote>
+Our next team member strongly believes that dreams and dedication form a powerful combination and what sets you apart is how strongly you’re willing to let yourself go to find yourself! <br></div>
+
+
+  </div></a><a href="javascript:void(0);" title="Shruti Kalra - Organiser"><div class="about__slot">
+    <div class="headshot"  onclick="biograph(this.parentNode);" style="background-image:url('photos/shruti.jpg');"></div>
+
+  <div class="about__info">
+  <h4 class="name">Shruti Kalra</h4>
+  <h5 class="title">Organiser</h5>
+  </div>
+      <div class="bioText">void main() { <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      	cout << “I’ve an obsession with soup, supernatural and puns. <br> I’m soupunatural!”; <br>
+      }<br>
+    </div>
+
+  </div></a><a href="javascript:void(0);" title="Sheryl Gupta - Organiser"><div class="about__slot">
+    <div class="headshot"  onclick="biograph(this.parentNode);" style="background-image:url('photos/sheryl.jpg');"></div>
+
+  <div class="about__info">
+  <h4 class="name">Sheryl Gupta</h4>
+  <h5 class="title">Organiser</h5>
+  </div>
+      <div class="bioText"><blockquote>Dreams become too boring, if you don’t have the courage to chase it!</blockquote>
+Meet our very own enthusiastic dreamer, Sheryl.<br> You can find her dancing with stars. She is the perfect mixture of craziness and intelligence, filling your life with madness.</div>
+
+  </div></a><a href="javascript:void(0);" title="Pearl Pullan - Program Head"><div class="about__slot">
+    <div class="headshot" onclick="biograph(this.parentNode);" style="background-image:url('photos/pearl.jpg');"></div>
+
+  <div class="about__info">
+  <h4 class="name">Pearl Pullan</h4>
+  <h5 class="title">Program Head</h5>
+  </div>
+    <div class="bioText"><blockquote>The biggest adventure you can take is to live the life of your dream! </blockquote>
+A hardworking girl, who loves to make each second count. <br>
+</div>
+
+  </div></a><a href="javascript:void(0);" title="Jahnvi Tyagi - Event Management Head"><div class="about__slot">
+    <div class="headshot"  onclick="biograph(this.parentNode);" style="background-image:url('photos/jahnvi.jpg');"></div>
+
+  <div class="about__info">
+  <h4 class="name">Jahnvi Tyagi</h4>
+  <h5 class="title">Event Management Head</h5>
+  </div>
+      <div class="bioText"><blockquote>A girl should be two things, who and what she wants!</blockquote>
+With this strong belief is Jahnvi, forever trying to right the wrongs with her quotes. <br></div>
+
+  </div></a>
+
+  <a href="javascript:void(0);" title="Hansika Gupta - Director of Speakers<"><div class="about__slot">
+    <div class="headshot"  onclick="biograph(this.parentNode);" style="background-image:url('photos/hansika.jpg');"></div>
+
+  <div class="about__info">
+  <h4 class="name">Hansika Gupta</h4>
+  <h5 class="title">Director of Speakers</h5>
+  </div>
+      <div class="bioText"><blockquote>Walking is too mainstream, why not hop all the way round.</blockquote>
+Hopping into our lives is Hansika, the ever so optimistic person who will lift up your mood in a matter of seconds with her moves and groves. <br></div>
+
+  </div></a><a href="javascript:void(0);" title="Manasve Dahiya - Director of Speakers"><div class="about__slot">
+    <div class="headshot" onclick="biograph(this.parentNode);" style="background-image:url('photos/manasve.jpg');"></div>
+
+  <div class="about__info">
+  <h4 class="name">Manasve Dahiya</h4>
+  <h5 class="title">Director of Speakers</h5>
+  </div>
+    <div class="bioText">If I had to choose one sentence that best describes me then it would go something like this: An enigmatic melophile who is an introvert at heart. I believe that my strength lies in my zen like energy that helps me navigate my way through this chaotic world. <br> I am an old soul, a wanderer, an ardent reader, a music lover, a fitness freak all packed in one person.</div>
+
+  </div></a><a href="javascript:void(0);" title="Sakshi Vij - Website Head"><div class="about__slot">
+    <div class="headshot"  onclick="biograph(this.parentNode);" style="background-image:url('photos/sakshi.jpg');"></div>
+
+  <div class="about__info">
+  <h4 class="name">Sakshi Vij</h4>
+  <h5 class="title">Website Head</h5>
+  </div>
+      <div class="bioText">wc -l what_defines_sakshi.txt <br>
+OUTPUT: reading <br><br> &nbsp;&nbsp;&nbsp;
+And as you may have guessed, coding with a side of never backing down from challenges. <br>
+</div>
+
+  </div></a>
+
+    <a href="javascript:void(0);" title="Shivani Bakshi - Website Head"><div class="about__slot">
+      <div class="headshot"  onclick="biograph(this.parentNode);" style="background-image:url('photos/shivani.png');"></div>
+
+    <div class="about__info">
+    <h4 class="name">Shivani Bakshi</h4>
+    <h5 class="title">Website Head</h5>
+    </div>
+        <div class="bioText">if(!tired()) { <br>&nbsp;&nbsp;&nbsp; keepCoding(); <br> } else { <br>&nbsp;&nbsp;&nbsp; drinkCoffee(); <br> } <br> And that pretty much sums up my life!</div>
+
+    </div></a><a href="javascript:void(0);" title="Manu Goel - Sponosorship Head"><div class="about__slot">
+      <div class="headshot" onclick="biograph(this.parentNode);" style="background-image:url('photos/manu.jpg');"></div>
+
+    <div class="about__info">
+    <h4 class="name">Manu Goel</h4>
+    <h5 class="title">Sponsorship Head</h5>
+    </div>
+      <div class="bioText">I am Manu Goel, Sponsorship Head of TEDxIGDTU'19 . My resposibility is to generate funds to support expenses for the event. <br></div>
+
+
+    </div></a><a href="javascript:void(0);" title="Aruja Sharma - Media and Communication Head"><div class="about__slot">
+      <div class="headshot"  onclick="biograph(this.parentNode);" style="background-image:url('photos/aruja.jpg');"></div>
+
+    <div class="about__info">
+    <h4 class="name">Aruja Sharma</h4>
+    <h5 class="title">Media and Communication Head</h5>
+    </div>
+        <div class="bioText">Trying to find a balance between procrastinating and doing everything with perfection is Aruja. <br>She will be found with a camera in one hand and food in the other; your go-to person for spreading happiness. <br></div>
+    </div></a>
+
+    <a href="javascript:void(0);" title="Harshita Kukreja - Content Head"><div class="about__slot">
+      <div class="headshot"  onclick="biograph(this.parentNode);" style="background-image:url('photos/harshita.jpg');"></div>
+
+    <div class="about__info">
+    <h4 class="name">Harshita Kukreja</h4>
+    <h5 class="title">Content Head</h5>
+    </div>
+        <div class="bioText"><blockquote>Challenging the norms, one at a time, is Harshita. </blockquote> The best book hoarder and the worst reader, she is stumbling her way through the circus of life with a book in her hand, always. <br></div>
+
+    </div></a><a href="javascript:void(0);" title="Reetinder Kaur Chowdhary - Content Head"><div class="about__slot">
+      <div class="headshot" onclick="biograph(this.parentNode);" style="background-image:url('photos/reet.jpg');"></div>
+
+    <div class="about__info">
+    <h4 class="name">Reetinder Kaur Chowdhary</h4>
+    <h5 class="title">Content Head</h5>
+    </div>
+      <div class="bioText">A dedicated polyglot and a Greek mythology aficionado, Reet can be found swimming or with her nose in a book.</div>
+    </div></a>
+  </div>
+</div>
+
+	<!--- Footer -->
+	<footer>
+		<div class="container-fluid padding" id="contact">
+			<div class="row welcome text-center">
+				<div class="col-12">
+					<h2 class="display-4 animated slow delay-2s flipInX">Contact</h2>
+				</div>
+				<div class="col-12 social animated slow delay-2s zoomInDown">
+					<a href="https://www.facebook.com/TEDxIGDTU/" target="_blank"><i class="fab fa-facebook"></i></a>
+					<a href="https://instagram.com/tedx_igdtu?utm_source=ig_profile_share&igshid=yzz49l19aes9" target="_blank"><i class="fab fa-instagram" ></i></a>
+					<a href="https://www.linkedin.com/company/tedxigdtu" target="_blank"><i class="fab fa-linkedin"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 text-center">
+			<hr class="light-100">
+			<h6 class="last animated slow delay-2s slideInUp">This independent TEDx event is operated under license from TED.</h6>
+		</div>
+	</footer>
+
+  <a href="javascript:" id="return-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+  <script>
+    $(window).scroll(function() {
+      if ($(this).scrollTop() >= 50) { 
+        $('#return-to-top').fadeIn(200);  
+      } else {
+        $('#return-to-top').fadeOut(200); 
+      }
+    });
+    $('#return-to-top').click(function() { 
+      $('body,html').animate({
+        scrollTop : 0                
+      }, 500);
+    });
+  </script>
+<script >function biograph(e) {
+	if (e.className == 'about__slot') {
+		e.className = 'about__slot bio';
+	} else
+	{
+		e.className = 'about__slot';
+	}
+}
+</script>
+
+</body>
+</html>

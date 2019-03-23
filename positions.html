@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TEDxIGDTU</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link rel="apple-touch-icon" sizes="57x57" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="logos/IMG_2792.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="logos/IMG_2792.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="logos/IMG_2792.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="logos/IMG_2792.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logos/IMG_2792.png">
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="animate.min.css" rel="stylesheet"> <!-- Animations CSS -->
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+		html, body {
+			font-family: 'Poppins', sans-serif;
+		}
+		body {
+			overflow-x: hidden;
+		}
+		.navbar {
+			padding: 0.8rem;
+		}
+		.navbar-nav li {
+  			padding-right: 20px;
+		}
+		.nav-link {
+  			font-size: 1.1em !important;	
+		}
+		#ticketModal .modal-dialog {
+  			max-width: 30em;
+  			margin: 4em auto;
+		}
+		#ticketModal .modal-body {
+  			position: relative;
+  			padding: 1.3em;
+		}
+		#ticketModal .close {
+  			position:absolute;
+  			right:-30px;
+  			top:0;
+  			z-index:999;
+  			font-size:2rem;
+  			font-weight: normal;
+  			color:#fff;
+  			opacity:1;
+		}
+		.lead {
+  			color: gray;
+  			text-align: justify;
+		}
+		.padding {
+  			padding-bottom: 1.2rem;
+		}
+    	.social a {
+  			font-size: 4.5em;
+  			padding: 3rem;
+		}
+		.fa-facebook {
+  			color: #3b5998;
+		}
+		.fa-linkedin {
+		  	color: #0e76a8;
+		}
+		.fa-google-plus-g {
+		  	color: #dd4b39;
+		}
+		.fa-instagram {
+		  	color: #bc2a8d;
+		}
+		.fa-youtube {
+			color: #bb0000;
+		}
+		.fa-facebook:hover, 
+		.fa-linkedin:hover, 
+		.fa-google-plus-g:hover,
+		.fa-instagram:hover,
+		.fa-youtube:hover {
+		  	color: #d5d5d5;
+		}
+		footer {
+		  	background-color: BLACK;
+		  	color: #d5d5d5;
+		  	padding-top: 2rem;
+		} 
+		hr.light {
+		  	border: 1px solid #d5d5d5;
+		  	width:75%;
+		  	margin-top: 0.8rem;
+		  	margin-bottom: 1rem;
+		}
+		hr.light-100 {
+		  	border: 1px solid #d5d5d5;
+		  	width:100%;
+		  	margin-top: 0.8rem;
+		  	margin-bottom: 1rem;
+		}
+		#return-to-top {
+		  	position: fixed;
+		  	bottom: 20px;
+		  	right: 20px;
+		  	background: #bdc3c7;
+		  	opacity: 0.9;
+		  	width: 3em;
+		  	height: 3em;
+		  	display: block;
+		  	text-decoration: none;
+		  	-webkit-border-radius: 35px;
+		  	-moz-border-radius: 35px;
+		  	border-radius: 35px;
+		  	display: none;
+		  	-webkit-transition: all 0.3s linear;
+		  	-moz-transition: all 0.3s ease;
+		  	-ms-transition: all 0.3s ease;
+		  	-o-transition: all 0.3s ease;
+		  	transition: all 0.3s ease;
+		}
+		.fa-angle-double-up {
+		  	color: #e74c3c;
+		  	margin: 0;
+		  	position: relative;
+		  	left: 0.9em;
+		  	top: 0.8em;
+		  	font-size: 19px;
+		  	-webkit-transition: all 0.3s ease;
+		  	-moz-transition: all 0.3s ease;
+		  	-ms-transition: all 0.3s ease;
+		  	-o-transition: all 0.3s ease;
+		  	transition: all 0.3s ease;
+		}
+		#return-to-top:hover {
+		  	background: #7f8c8d;
+		}
+		#return-to-top:hover i {
+  			color: #fff;
+  			top: 5px;
+		}
+		ul.polaroids li { 
+			display: inline; 
+		}
+  		ul.polaroids a { 
+  			background: #fff; 
+  			display: inline; 
+  			float: left; 
+  			margin: 0 0 80px 80px; 
+  			width: auto; 
+  			padding: 10px 10px 15px; 
+  			text-align: center; 
+  			font-family: "Marker Felt", sans-serif; 
+  			text-decoration: none; 
+  			color: #333; 
+  			font-size: 18px; 
+  			-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25); 
+  			-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25); 
+  			-webkit-transition: -webkit-transform .15s linear; 
+  		}
+    	ul.polaroids li {
+      		padding-left: 1.5em;
+    	}
+    	@media screen and (max-width: 768px) {
+      		ul.polaroids li a {
+        		margin-left: 1.8em;
+      		} 
+    	}
+    	@media screen and (min-width: 768px) and (max-width: 1000px) {
+      		ul.polaroids li a {
+        		margin-left: 2.8em;
+      		} 
+    	}
+    	@media screen and (min-width: 320px) and (max-width: 568px) {
+      		ul.polaroids li a {
+        		margin-left: 0.2em;
+      		} 
+    	}
+    	@media screen and (min-width: 411px) and (max-width: 700px) {
+      		ul.polaroids li a {
+        		margin-left: 1.7em;
+      		} 
+    	}
+    	@media screen and (min-width: 375px) and (max-width: 667px) {
+      		ul.polaroids li a {
+        		margin-left: 1.7em;
+      		} 
+    	}
+		ul.polaroids img { 
+			display: block; 
+			width: 200px; 
+			margin-bottom: 12px; 
+		}
+		ul.polaroids a:after { 
+			content: attr(title); 
+		}
+		ul.polaroids li.messy a {
+      		margin-top: -400px;
+      		position: relative;
+      		left: 160px;
+    	}
+		ul.polaroids li a:hover { 
+			-webkit-transform: scale(1.25); 
+			-moz-transform: scale(1.25); 
+			-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5); 
+			-moz-box-shadow: 0 3px 6px rgba(0,0,0,.5); 
+			position: relative; 
+			z-index: 5; 
+		}
+		.card-img-top {
+			height: 80%;
+			margin-left: 0.55em;
+			margin-top: 0.5em;
+		}
+		.card .card-img-top {
+        	display: none;
+        	position: absolute;
+        	top: 0;
+        	left: 0;
+        	z-index: 99;
+    	}
+    	.card:hover .card-img-top {
+        	display: inline;
+    	}
+		/*---Media Queries --*/
+		@media screen and (max-width: 800px) {
+		    .navbar-brand {
+		      height: 15%;
+		      width: 50%;
+		    }
+		    .lead {
+		      font-size: 90%;
+		    }
+		    .welcome {
+		      padding-top: 0;
+		    }
+		    .social a {
+		       font-size: 2em;
+		       padding: 1rem;
+		    }
+		}
+		@media screen and (max-width: 600px) {
+		    .navbar-brand {
+		      height: 15%;
+		      width: 50%;
+		    }
+		    .lead {
+		      font-size: 90%;
+		    }
+		    .welcome {
+		      padding-top: 0vh;
+		    }
+		    .figures {
+		      padding-top: 10vh;
+		    }
+		    .social a {
+		        font-size: 2em;
+		        padding: 1rem;
+		    }
+		    .image-wrap {
+		    	overflow-x: hidden;
+		    }
+		    .media {
+		    	width: 300px;
+		    }
+		    .bd {
+		    	font-size: 0.5em;
+		    }
+		}
+		@media screen and (min-width: 768px) and (max-width: 1000px) {
+		  	.display-4 {
+		    	font-size: 280%;
+		  	}
+		    .last {
+		        font-size: 120%;
+		    }
+		  	.lead {
+		    	font-size: 110%;
+		  	}
+		  	.logo {
+		    	width: 40%;
+		    	height: 30%;
+		  	}
+		  	.navbar-brand {
+		    	height: 100%;
+		    	width: 100%;
+		  	}
+			.navbar {
+		  		padding: 0;
+			}
+			.navbar-nav li {
+		  		padding-right: 0px;
+			}
+			.nav-link {
+		  		font-size: 1.0em !important;
+			}
+		  	.socail a {
+		    	font-size: 2.5em;
+		    	padding: 1.2rem;
+		  	}
+		}
+		@media (max-width: 576px) {
+		  	.display-4 {
+		    	font-size: 160%;
+		  	}
+		  	.socail a {
+		    	font-size: 2em;
+		    	padding: 0.7rem;
+		  	}
+		}
+		@media screen and (min-width: 900px) and (max-width: 1200px)  {
+        	.navbar {
+          		padding: 0;
+        	}
+        	.navbar-brand {
+            	height: 80%;
+            	width: 70%;
+        	}
+			.navbar-nav li {
+  				padding-right: 0.4px;
+			}
+			.nav-link {
+  				font-size: 1.4em !important;
+			}
+        	.padding {
+          		padding-top: 1em;
+        	}
+        	.last {
+          		font-size: 180%;
+        	}
+    		.display-4 {
+    			font-size: 300%;
+  			}
+        	.logo {
+            	height: 30%;
+            	width: 70%;
+        	}
+        	.lead {
+            	font-size: 130%;
+        	}
+        	.welcome {
+            	padding-top: 0;
+        	}
+        	.social a {
+            	font-size: 2.5em;
+            	padding: 0.6rem;
+        	} 
+        	/*.column {
+		  		margin: 4em;
+			}*/
+			.column {
+		  		margin-left: 9.5em;
+		  		margin-right: 9em;
+			}
+      	}
+		@media (max-width: 992px) {
+			.social a {
+				font-size: 2em;
+    			padding: 0.4rem;
+  			}
+		}
+		@media (max-width: 768px) {
+			.display-4 {
+		    	font-size: 200%;
+		  	}
+		  	.socail a {
+		    	font-size: 2.5em;
+		    	padding: 1.2rem;
+		  	}
+		}
+		@media (max-width: 576px) {
+		  	.display-4 {
+		    	font-size: 160%;
+		  	}
+		  	.socail a {
+		    	font-size: 2em;
+		    	padding: 0.4rem;
+		  	}
+		}
+		@media screen and (max-width: 800px) {
+		    .navbar-brand {
+		      	height: 15%;
+		      	width: 50%;
+		    }
+		    .lead {
+		      	font-size: 90%;
+		    }
+		    .welcome {
+		      	padding-top: 0;
+		    }
+		    .social a {
+		        font-size: 2em;
+		        padding: 1rem;
+		    }
+		    footer {
+		    	margin-top: 70%;
+		    }
+		}
+		@media screen and (max-width: 600px) {
+		    .navbar-brand {
+		      	height: 15%;
+		      	width: 50%;
+		    }
+		    .lead {
+		      	font-size: 90%;
+		    }
+		    .welcome {
+		      	padding-top: 0vh;
+		    }
+		    .social a {
+		        font-size: 2em;
+		        padding: 1rem;
+		    }
+		}
+		@media screen and (max-width: 800px) {
+			.logo {
+				height: 25%;
+				width: 80%;
+			}
+			.welcome {
+				padding-top: 0;
+			}
+    		#ticketModal .modal-dialog {
+      			max-width: 20em;
+      			margin: 5em auto;
+			}
+		    .padding {
+		    	padding-top: 0.4em;
+		    }
+			.social a {
+				font-size: 2.5em;
+				padding: 0.4rem;
+			}
+			.line-1 {
+				font-size: 2em;
+			}
+		}
+		@media screen and (max-width: 600px) {
+			.logo {
+      			height: 25%;
+      			width: 80%;
+    		}
+    		.welcome {
+      			padding-top: 0vh;
+    		}
+    		#ticketModal .modal-dialog {
+      			max-width: 20em;
+      			margin: 5em auto;
+			}
+    		.social a {
+				font-size: 2.5em;
+				padding: 0.4rem;
+			}
+			.line-1 {
+				font-size: 2em;
+			}
+    	}
+    	@media screen and (max-width: 320px) {			
+		    .lead {
+		      	font-size: 80%;
+		    }
+			.social a {
+				font-size: 2.5em;
+				padding: 0.2rem;
+			}	
+    	}
+    	@media screen and (min-width: 900px) and (max-width: 1200px)  {
+    		.navbar-brand {
+		      	height: 50%;
+		      	width: 60%;
+		    }
+		    .padding {
+		    	padding-top: 1em;
+		    }
+		    .logo {
+      			height: 23%;
+      			width: 60%;
+    		}
+		    .lead {
+		      	font-size: 150%;
+		    }
+		    .welcome {
+		      	padding-top: 0;
+		    }
+		    .social a {
+		        font-size: 2.5em;
+		        padding: 0.6rem;
+		    }	
+    	}
+    	@media screen and (min-width: 320px) and (max-width: 500px) {
+    		#ticketModal .modal-dialog {
+    			max-width: 15em;
+      			margin: 3em auto;
+			}
+		}
+		@media screen and (min-width: 360px) and (max-width: 600px) {
+			#ticketModal .modal-dialog {
+      			max-width: 18em;
+      			margin: 5em auto;
+			}
+		}
+		@media screen and (min-width: 768px) and (max-width: 1000px) {
+			#ticketModal .modal-dialog {
+      			max-width: 30em;
+      			margin: 4em auto;
+			}
+		}
+		@media screen and (min-width: 1024px) and (max-width: 1300px) {
+			#ticketModal .modal-dialog {
+      			max-width: 35em;
+      			margin: 4em auto;
+			}
+			footer {
+		    	margin-top: 70%;
+		    }
+		}
+		@media screen and (min-width: 1200px) {
+			footer {
+		    	margin-top: 10%;
+		    }
+		}
+		.shadow { 
+  display: block; 
+}
+/* layout */ 
+.media { 
+  margin-top: 2em;
+}
+.media .img { 
+  margin-left: 1em;
+}
+/* layout helpers */ 
+.cf:before,
+.cf:after {
+  content: " "; 
+  display: table;
+}
+.cf:after,
+.clear {
+  clear: both;
+}
+.inner-overlay-box {
+  color: #eee; 
+}
+/*
+ColorBox Core Style:
+The following CSS is consistent between example themes and should not be altered.
+ */
+  #colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+  #cboxOverlay{position:fixed; width:100%; height:100%;}
+  #cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+  #cboxContent{position:relative;}
+  #cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+  #cboxTitle{margin:0;}
+  #cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+  #cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+  .cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none;}
+  .cboxIframe{width:100%; height:100%; display:block; border:0;}
+  #colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+  /* 
+  User Style:
+  Change the following styles to modify the appearance of ColorBox.  They are
+  ordered & tabbed in a way that represents the nesting of the generated HTML.
+   */
+  #cboxOverlay{ /* background:url(../img/ui/overlay.png) repeat 0 0; */}
+  #colorbox{background-color: #444;background-color: rgba(0,0,0,.75);}
+  #colorbox[style] { /* top: 0 !important;  top: 0; bottom: 0; left: 0; right: 0; */ } 
+  #cboxTopLeft{width:21px; height:21px; /*background:url(../img/ui/controls.png) no-repeat -101px 0 */;}  
+  #cboxTopRight{width:21px; height:21px; /*background:url(../img/ui/controls.png) no-repeat -130px 0 */;}  
+  #cboxBottomLeft{width:21px; height:21px; /*background:url(../img/ui/controls.png) no-repeat -101px -29px */;}  
+  #cboxBottomRight{width:21px; height:21px; /*background:url(../img/ui/controls.png) no-repeat -130px -29px */;}  
+  #cboxMiddleLeft{width:21px; /*background:url(../img/ui/controls.png) left top repeat-y */;}  
+  #cboxMiddleRight{width:21px; /*background:url(../img/ui/controls.png) right top repeat-y */;}  
+  #cboxTopCenter{height:21px; /*background:url(../img/ui/border.png) 0 0 repeat-x */;}  
+  #cboxBottomCenter{height:21px; /*background:url(../img/ui/border.png) 0 -29px repeat-x */;}  
+  #cboxContent{/*background:#fff;*/ overflow:hidden;}
+  .cboxIframe{background:#fff;}
+  #cboxError{padding:50px; border:1px solid #ccc;}
+  #cboxLoadedContent{margin-bottom:28px;}
+  #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+  #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+  #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+  #cboxPrevious,
+  #cboxNext,
+  #cboxClose { 
+    background-image: url("https://lh3.googleusercontent.com/-aopYh60FBPw/URLYWU5Py3I/AAAAAAAAAVs/y8J7RIrgToM/s800/controls-custom.png"); 
+  background-repeat: no-repeat; }
+  #cboxPrevious{position:absolute; bottom:0; left:0; background-position: 0 0; width:25px; height:25px; text-indent:-9999px;}
+  #cboxPrevious:hover{background-position: 0 -25px;}
+  #cboxNext{position:absolute; bottom:0; left:27px; background-position: -25px 0; width:25px; height:25px; text-indent:-9999px;}
+  #cboxNext:hover{background-position: -25px -25px;}
+  #cboxLoadingOverlay{/*background:url(../img/ui/loading_background.png) no-repeat center center;*/}
+  #cboxLoadingGraphic{/*background:url(../img/ui/loading.gif) no-repeat center center;*/}
+  #cboxClose{position:absolute; bottom:0; right:20px; background-position: -50px 0; width:30px; height:30px; text-indent:-9999px;}
+  #cboxClose:hover{background-position:-50px -25px;}
+  @media only screen and (max-width: 480px) { 
+    header {
+      height: 200px;
+    }
+    .image-wrap { 
+      margin-top: 0; 
+    } 
+    .media .img img { 
+      width: 140px;
+      height: 220px;
+    }
+    .p-inner-window {
+      margin-right: 20em;
+      font-size: 0.5em;
+    }
+    .image-wrap {
+      overflow: hidden;
+    }
+    #colorbox,
+    #cboxWrapper,
+    #cboxContent,
+    #cboxLoadedContent {
+      min-height: 1200px;
+    }
+    #cboxTitle,
+    #cboxCurrent,
+    #cboxSlideshow,
+    #cboxPrevious,
+    #cboxNext, 
+    #cboxLoadingOverlay,
+    #cboxLoadingGraphic, 
+    #cboxClose {
+      top: 0; 
+      bottom: auto;
+    }
+    #cboxTitle {
+      margin-top: 100%;
+      margin-left: 2.5%;
+      text-align: left; 
+    }
+    #cboxClose { 
+      right: auto;
+      left: 0;
+      margin-left: 40%;
+    }
+  }
+  @media only screen and (max-width: 480px) { 
+    header {
+      height: 220px;
+    }
+    .image-wrap { 
+      margin-top: 0; 
+    }
+    .media .img img { 
+      max-width: 250px;
+    }
+    .p-inner-window {
+      margin-right: 20em;
+      margin-left: 2%;
+    }
+    .image-wrap {
+      overflow: hidden;
+    }
+    #colorbox,
+    #cboxWrapper,
+    #cboxContent,
+    #cboxLoadedContent {
+      min-height: 1200px;
+    }
+    #cboxTitle,
+    #cboxCurrent,
+    #cboxSlideshow,
+    #cboxPrevious,
+    #cboxNext, 
+    #cboxLoadingOverlay,
+    #cboxLoadingGraphic, 
+    #cboxClose {
+      top: 0; 
+      bottom: auto;
+    }
+    #cboxTitle {
+      margin-top: 100%;
+      margin-left: 2.5%;
+      text-align: left; 
+    }
+    #cboxClose { 
+      right: auto;
+      left: 0;
+      margin-left: 40%;
+    }
+
+  }
+
+  @media only screen and (min-width: 481px) and (max-width: 574px) { 
+    header {
+      height: 150px;
+    }
+    .image-wrap { 
+      margin-top: 0; 
+    }
+    .p-inner-window {
+      margin-right: 18em;
+      margin-left: 2%;
+      font-size: 0.8em;
+    }
+    .p-inner-window {
+      margin-bottom: 3em;
+    }
+    #colorbox,
+    #cboxWrapper,
+    #cboxContent,
+    #cboxLoadedContent {
+      min-height: 592px;
+      min-height: 736px;
+    }
+    #cboxTitle,
+    #cboxCurrent,
+    #cboxSlideshow,
+    #cboxPrevious,
+    #cboxNext, 
+    #cboxLoadingOverlay,
+    #cboxLoadingGraphic, 
+    #cboxClose {
+      top: 0; 
+      bottom: auto;
+    }
+    #cboxTitle {
+      margin-top: 92.5%;
+      margin-left: 2.5%;
+      text-align: left; 
+    }
+    #cboxClose { 
+      right: auto;
+      left: 0;
+      margin-left: 54%;
+    }
+  }
+  @media only screen and (min-width: 575px) and (max-width: 719px) { 
+    .p-inner-window {
+      margin: 0 20em 0 2.5%;
+    }
+    .image-wrap {
+      overflow: hidden;
+    } 
+    .hd h3,
+    .p-inner-window {
+      margin-right: 18em;
+      margin-left: 2.5%;
+    }
+    .p-inner-window {
+      margin-bottom: 3em;
+    }
+    #colorbox,
+    #cboxWrapper,
+    #cboxContent,
+    #cboxLoadedContent {
+      min-height: 592px;
+      min-height: 736px;
+    }
+    #cboxTitle,
+    #cboxCurrent,
+    #cboxSlideshow,
+    #cboxPrevious,
+    #cboxNext, 
+    #cboxLoadingOverlay,
+    #cboxLoadingGraphic, 
+    #cboxClose {
+      top: 0; 
+      bottom: auto;
+    }
+    #cboxTitle {
+      margin-top: 73%;
+      margin-left: 2.5%;
+      text-align: left; 
+    }
+    #cboxClose { 
+      right: auto;
+      left: 0;
+      margin-left: 54%;
+    }
+  }
+  @media only screen (min-width:700px) and (max-width:1000px) {
+  	.image-wrap {
+      overflow: visible;
+    }
+    .image-wrap {
+      width: 40em;  
+      margin: 1em auto 1em;
+    }
+    #cboxClose { 
+      right: auto;
+      left: 0;
+      margin-left: 54%;
+    }
+    .inline {
+    	margin: 2em;
+    }
+  }
+  @media only screen and (min-width: 720px) { 
+    .media,
+    .bd,
+    .ft { overflow:hidden; }
+    .media .img { 
+      float:left;
+      margin-left: 0.2em;
+    }
+    .media .img img { 
+      display:block; 
+    } 
+    #cboxClose { 
+      margin-bottom: 380px;
+    }
+  }
+  .inline {
+  	font-weight: bold;
+  }
+	</style>
+</head>
+<body style="background-color: black;">
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-dark bg-black fixed-top animated slow slideInDown" style="background-color: black;">
+		<div class="container-fluid">
+			<a href="index.php" class="navbar-brand" title="Go to TEDxIGDTU homepage"><img class="img-fluid logo" src="logos/IMG_2792.png" alt="TEDxIGDTU logo" width="20%" height="5%"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link tab" href="about.html">About<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link tab" href="theme.html">Theme</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link tab" href="events.html">Events</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link tab" href="https://tedxigdtu.wordpress.com/" target="_blank">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link tab" href="speakers.html">Speakers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link tab" href="team.html">Team</a>
+					</li>
+					<!--<li class="nav-item">
+						<a class="nav-link tab" href="#sponsors">Sponsors</a>
+					</li>
+					-->
+					
+					<li class="nav-item">
+						<a class="nav-link tab" href="#contact">Contact</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link tab" href="Positions.html">Roles</a>
+					</li>
+					
+					<li>
+			<button class="btn btn-secondary" ><a class="nav-link tab" href="ticket.php">Get Tickets</a></button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="padding"></div>
+	<div class="padding"></div>
+	<div class="padding"></div>
+	<div class="padding"></div>
+
+	<div class="container padding">
+		<div class="row text-center">
+			<div class="col-12">
+				<h1 class="display-4 animated slow delay-1s flipInX" style="color: gray;">Positions</h1>
+				<hr class="light-100"> 
+				<br>
+				<blockquote class="blockquote">
+					<h2 style="color: white;">Curator</h2>
+					<p class="lead">
+						The curator decides who will be speaking at the event. They also curate the itinerary for the event. Other duties include handling and managing the paperwork, including dealing with the college authorities, managing the finances and the overall OC of the TEDx event.
+					</p> 
+					<h2 style="color: white;">Organiser</h2>
+					<p class="lead">
+						 The organizer oversees the functioning of the event and works alongside the curators and the program management head.
+					</p> 
+					<h2 style="color: white;">Program Management Head </h2>
+					<p class="lead">
+						This person leads all production and planning for the day of the event. They oversee all of the roles happening on the day of the event related to stage management, technology, and video. They also serve as the contact with the venue’s staff, manage day-of-event activities and are in charge of ticketing and registration.
+					</p>
+					<h2 style="color: white;">Director of Speakers </h2>
+					<p class="lead">
+						This person is responsible for identifying potential speakers for the event and contacting them. They also serve as the point of contact between the speakers and the rest of the team.
+					</p>
+					<h2 style="color: white;">Sponsorship Head</h2>
+					<p class="lead">
+						This team member is responsible for raising money from sponsors for event expenses and managing the event’s finances. They should be someone who has experience with fundraising.
+					</p>
+					<h2 style="color: white;">Content Team Head</h2>
+					<p class="lead">
+						This member is responsible for starting and maintaining the blog for your TEDx event, along with preparing the content for the event and speaker descriptions, which then goes on all the social media handles.
+					</p>
+					<h2 style="color: white;">Media and Communications Head</h2>
+					<p class="lead">
+						This member takes care of all the creative aspects pertaining to the event, like designing posters and deciding the décor. They also have the important task of overseeing the video and production of the event – from managing audio and video needs to the camera operators. They should be someone who has experience in digital design.
+					</p>
+					<h2 style="color: white;">Public Relations Head</h2>
+					<p class="lead">
+						They handle all the social media aspects of the event and are responsible for creating a strong online presence for the event. They also promote the event offline.  
+					</p> 
+					<h2 style="color: white;">Website Head</h2>
+					<p class="lead">
+						This member is responsible for creating the website for your event from scratch. The website is an important component of any TEDx event since it is where all the updates and registrations for the event take place.
+					</p>
+
+				</blockquote>
+			</div>
+		</div>
+	</div>
+
+
+	<!--- Footer -->
+	<footer>
+		<div class="container-fluid padding" id="contact">
+			<div class="row welcome text-center">
+				<div class="col-12">
+					<h2 class="display-4 animated slow delay-1s flipInX">Contact</h2>
+				</div>
+				<div class="col-12 social animated slow delay-1s zoomInDown">
+					<a href="https://www.facebook.com/TEDxIGDTU/" target="_blank"><i class="fab fa-facebook"></i></a>
+					<a href="https://instagram.com/tedx_igdtu?utm_source=ig_profile_share&igshid=yzz49l19aes9" target="_blank"><i class="fab fa-instagram" ></i></a>
+					<a href="https://www.linkedin.com/company/tedxigdtu" target="_blank"><i class="fab fa-linkedin"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 text-center">
+			<hr class="light-100">
+			<h6 class="last animated slow delay-1s slideInUp">This independent TEDx event is operated under license from TED.</h6>
+		</div>
+	</footer>
+
+	<a href="javascript:" id="return-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<script>
+		$(window).scroll(function() {
+			if ($(this).scrollTop() >= 50) { 
+				$('#return-to-top').fadeIn(200);  
+			} else {
+				$('#return-to-top').fadeOut(200); 
+			}
+		});
+		$('#return-to-top').click(function() { 
+			$('body,html').animate({
+				scrollTop : 0                
+			}, 500);
+		});
+	</script>
+
+
+</body>
+</html>

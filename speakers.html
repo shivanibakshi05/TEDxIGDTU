@@ -1,0 +1,2100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TEDxIGDTU</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link rel="apple-touch-icon" sizes="57x57" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="logos/IMG_2792.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="logos/IMG_2792.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="logos/IMG_2792.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="logos/IMG_2792.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logos/IMG_2792.png">
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="animate.min.css" rel="stylesheet"> <!-- Animations CSS -->
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+		html, body {
+			font-family: 'Poppins', sans-serif;
+		}
+		body {
+			overflow-x: hidden;
+		}
+		.navbar {
+			padding: 0.8rem;
+		}
+		.navbar-nav li {
+  			padding-right: 20px;
+		}
+		.nav-link {
+  			font-size: 1.1em !important;	
+		}
+		#ticketModal .modal-dialog {
+  			max-width: 30em;
+  			margin: 4em auto;
+		}
+		#ticketModal .modal-body {
+  			position: relative;
+  			padding: 1.3em;
+		}
+		#ticketModal .close {
+  			position:absolute;
+  			right:-30px;
+  			top:0;
+  			z-index:999;
+  			font-size:2rem;
+  			font-weight: normal;
+  			color:#fff;
+  			opacity:1;
+		}
+		.lead {
+  			color: gray;
+  			text-align: justify;
+		}
+		.padding {
+  			padding-bottom: 1.2rem;
+		}
+    	.social a {
+  			font-size: 4.5em;
+  			padding: 3rem;
+		}
+		.fa-facebook {
+  			color: #3b5998;
+		}
+		.fa-linkedin {
+		  	color: #0e76a8;
+		}
+		.fa-google-plus-g {
+		  	color: #dd4b39;
+		}
+		.fa-instagram {
+		  	color: #bc2a8d;
+		}
+		.fa-youtube {
+			color: #bb0000;
+		}
+		.fa-facebook:hover, 
+		.fa-linkedin:hover, 
+		.fa-google-plus-g:hover,
+		.fa-instagram:hover,
+		.fa-youtube:hover {
+		  	color: #d5d5d5;
+		}
+		footer {
+		  	background-color: BLACK;
+		  	color: #d5d5d5;
+		  	padding-top: 2rem;
+		} 
+		hr.light {
+		  	border: 1px solid #d5d5d5;
+		  	width:75%;
+		  	margin-top: 0.8rem;
+		  	margin-bottom: 1rem;
+		}
+		hr.light-100 {
+		  	border: 1px solid #d5d5d5;
+		  	width:100%;
+		  	margin-top: 0.8rem;
+		  	margin-bottom: 1rem;
+		}
+		#return-to-top {
+		  	position: fixed;
+		  	bottom: 20px;
+		  	right: 20px;
+		  	background: #bdc3c7;
+		  	opacity: 0.9;
+		  	width: 3em;
+		  	height: 3em;
+		  	display: block;
+		  	text-decoration: none;
+		  	-webkit-border-radius: 35px;
+		  	-moz-border-radius: 35px;
+		  	border-radius: 35px;
+		  	display: none;
+		  	-webkit-transition: all 0.3s linear;
+		  	-moz-transition: all 0.3s ease;
+		  	-ms-transition: all 0.3s ease;
+		  	-o-transition: all 0.3s ease;
+		  	transition: all 0.3s ease;
+		}
+		.fa-angle-double-up {
+		  	color: #e74c3c;
+		  	margin: 0;
+		  	position: relative;
+		  	left: 0.9em;
+		  	top: 0.8em;
+		  	font-size: 19px;
+		  	-webkit-transition: all 0.3s ease;
+		  	-moz-transition: all 0.3s ease;
+		  	-ms-transition: all 0.3s ease;
+		  	-o-transition: all 0.3s ease;
+		  	transition: all 0.3s ease;
+		}
+		#return-to-top:hover {
+		  	background: #7f8c8d;
+		}
+		#return-to-top:hover i {
+  			color: #fff;
+  			top: 5px;
+		}
+		ul.polaroids li { 
+			display: inline; 
+		}
+  		ul.polaroids a { 
+  			background: #fff; 
+  			display: inline; 
+  			float: left; 
+  			margin: 0 0 80px 80px; 
+  			width: auto; 
+  			padding: 10px 10px 15px; 
+  			text-align: center; 
+  			font-family: "Marker Felt", sans-serif; 
+  			text-decoration: none; 
+  			color: #333; 
+  			font-size: 18px; 
+  			-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25); 
+  			-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25); 
+  			-webkit-transition: -webkit-transform .15s linear; 
+  		}
+    	ul.polaroids li {
+      		padding-left: 1.5em;
+    	}
+    	@media screen and (max-width: 768px) {
+      		ul.polaroids li a {
+        		margin-left: 1.8em;
+      		} 
+    	}
+    	@media screen and (min-width: 768px) and (max-width: 1000px) {
+      		ul.polaroids li a {
+        		margin-left: 2.8em;
+      		} 
+    	}
+    	@media screen and (min-width: 320px) and (max-width: 568px) {
+      		ul.polaroids li a {
+        		margin-left: 0.2em;
+      		} 
+    	}
+    	@media screen and (min-width: 411px) and (max-width: 700px) {
+      		ul.polaroids li a {
+        		margin-left: 1.7em;
+      		} 
+    	}
+    	@media screen and (min-width: 375px) and (max-width: 667px) {
+      		ul.polaroids li a {
+        		margin-left: 1.7em;
+      		} 
+    	}
+		ul.polaroids img { 
+			display: block; 
+			width: 200px; 
+			margin-bottom: 12px; 
+		}
+		ul.polaroids a:after { 
+			content: attr(title); 
+		}
+		ul.polaroids li.messy a {
+      		margin-top: -400px;
+      		position: relative;
+      		left: 160px;
+    	}
+		ul.polaroids li a:hover { 
+			-webkit-transform: scale(1.25); 
+			-moz-transform: scale(1.25); 
+			-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5); 
+			-moz-box-shadow: 0 3px 6px rgba(0,0,0,.5); 
+			position: relative; 
+			z-index: 5; 
+		}
+		.card-img-top {
+			height: 80%;
+			margin-left: 0.55em;
+			margin-top: 0.5em;
+		}
+		.card .card-img-top {
+        	display: none;
+        	position: absolute;
+        	top: 0;
+        	left: 0;
+        	z-index: 99;
+    	}
+    	.card:hover .card-img-top {
+        	display: inline;
+    	}
+		/*---Media Queries --*/
+		@media screen and (max-width: 800px) {
+		    .navbar-brand {
+		      height: 15%;
+		      width: 50%;
+		    }
+		    .lead {
+		      font-size: 90%;
+		    }
+		    .welcome {
+		      padding-top: 0;
+		    }
+		    .social a {
+		       font-size: 2em;
+		       padding: 1rem;
+		    }
+		}
+		@media screen and (max-width: 600px) {
+		    .navbar-brand {
+		      height: 15%;
+		      width: 50%;
+		    }
+		    .lead {
+		      font-size: 90%;
+		    }
+		    .welcome {
+		      padding-top: 0vh;
+		    }
+		    .figures {
+		      padding-top: 10vh;
+		    }
+		    .social a {
+		        font-size: 2em;
+		        padding: 1rem;
+		    }
+		    .image-wrap {
+		    	overflow-x: hidden;
+		    }
+		    .media {
+		    	width: 300px;
+		    }
+		    .bd {
+		    	font-size: 0.5em;
+		    }
+		}
+		@media screen and (min-width: 768px) and (max-width: 1000px) {
+		  	.display-4 {
+		    	font-size: 280%;
+		  	}
+		    .last {
+		        font-size: 120%;
+		    }
+		  	.lead {
+		    	font-size: 110%;
+		  	}
+		  	.logo {
+		    	width: 40%;
+		    	height: 30%;
+		  	}
+		  	.navbar-brand {
+		    	height: 100%;
+		    	width: 100%;
+		  	}
+			.navbar {
+		  		padding: 0;
+			}
+			.navbar-nav li {
+		  		padding-right: 0px;
+			}
+			.nav-link {
+		  		font-size: 1.0em !important;
+			}
+		  	.socail a {
+		    	font-size: 2.5em;
+		    	padding: 1.2rem;
+		  	}
+		}
+		@media (max-width: 576px) {
+		  	.display-4 {
+		    	font-size: 160%;
+		  	}
+		  	.socail a {
+		    	font-size: 2em;
+		    	padding: 0.7rem;
+		  	}
+		}
+		@media screen and (min-width: 900px) and (max-width: 1200px)  {
+        	.navbar {
+          		padding: 0;
+        	}
+        	.navbar-brand {
+            	height: 80%;
+            	width: 70%;
+        	}
+			.navbar-nav li {
+  				padding-right: 0.4px;
+			}
+			.nav-link {
+  				font-size: 1.4em !important;
+			}
+        	.padding {
+          		padding-top: 1em;
+        	}
+        	.last {
+          		font-size: 180%;
+        	}
+    		.display-4 {
+    			font-size: 300%;
+  			}
+        	.logo {
+            	height: 30%;
+            	width: 70%;
+        	}
+        	.lead {
+            	font-size: 130%;
+        	}
+        	.welcome {
+            	padding-top: 0;
+        	}
+        	.social a {
+            	font-size: 2.5em;
+            	padding: 0.6rem;
+        	} 
+        	/*.column {
+		  		margin: 4em;
+			}*/
+			.column {
+		  		margin-left: 9.5em;
+		  		margin-right: 9em;
+			}
+      	}
+		@media (max-width: 992px) {
+			.social a {
+				font-size: 2em;
+    			padding: 0.4rem;
+  			}
+		}
+		@media (max-width: 768px) {
+			.display-4 {
+		    	font-size: 200%;
+		  	}
+		  	.socail a {
+		    	font-size: 2.5em;
+		    	padding: 1.2rem;
+		  	}
+		}
+		@media (max-width: 576px) {
+		  	.display-4 {
+		    	font-size: 160%;
+		  	}
+		  	.socail a {
+		    	font-size: 2em;
+		    	padding: 0.4rem;
+		  	}
+		}
+		@media screen and (max-width: 800px) {
+		    .navbar-brand {
+		      	height: 15%;
+		      	width: 50%;
+		    }
+		    .lead {
+		      	font-size: 90%;
+		    }
+		    .welcome {
+		      	padding-top: 0;
+		    }
+		    .social a {
+		        font-size: 2em;
+		        padding: 1rem;
+		    }
+		    footer {
+		    	margin-top: 70%;
+		    }
+		}
+		@media screen and (max-width: 600px) {
+		    .navbar-brand {
+		      	height: 15%;
+		      	width: 50%;
+		    }
+		    .lead {
+		      	font-size: 90%;
+		    }
+		    .welcome {
+		      	padding-top: 0vh;
+		    }
+		    .social a {
+		        font-size: 2em;
+		        padding: 1rem;
+		    }
+		}
+		@media screen and (max-width: 800px) {
+			.logo {
+				height: 25%;
+				width: 80%;
+			}
+			.welcome {
+				padding-top: 0;
+			}
+    		#ticketModal .modal-dialog {
+      			max-width: 20em;
+      			margin: 5em auto;
+			}
+		    .padding {
+		    	padding-top: 0.4em;
+		    }
+			.social a {
+				font-size: 2.5em;
+				padding: 0.4rem;
+			}
+			.line-1 {
+				font-size: 2em;
+			}
+		}
+		@media screen and (max-width: 600px) {
+			.logo {
+      			height: 25%;
+      			width: 80%;
+    		}
+    		.welcome {
+      			padding-top: 0vh;
+    		}
+    		#ticketModal .modal-dialog {
+      			max-width: 20em;
+      			margin: 5em auto;
+			}
+    		.social a {
+				font-size: 2.5em;
+				padding: 0.4rem;
+			}
+			.line-1 {
+				font-size: 2em;
+			}
+    	}
+    	@media screen and (max-width: 320px) {			
+		    .lead {
+		      	font-size: 80%;
+		    }
+			.social a {
+				font-size: 2.5em;
+				padding: 0.2rem;
+			}	
+    	}
+    	@media screen and (min-width: 900px) and (max-width: 1200px)  {
+    		.navbar-brand {
+		      	height: 50%;
+		      	width: 60%;
+		    }
+		    .padding {
+		    	padding-top: 1em;
+		    }
+		    .logo {
+      			height: 23%;
+      			width: 60%;
+    		}
+		    .lead {
+		      	font-size: 150%;
+		    }
+		    .welcome {
+		      	padding-top: 0;
+		    }
+		    .social a {
+		        font-size: 2.5em;
+		        padding: 0.6rem;
+		    }	
+    	}
+    	@media screen and (min-width: 320px) and (max-width: 500px) {
+    		#ticketModal .modal-dialog {
+    			max-width: 15em;
+      			margin: 3em auto;
+			}
+		}
+		@media screen and (min-width: 360px) and (max-width: 600px) {
+			#ticketModal .modal-dialog {
+      			max-width: 18em;
+      			margin: 5em auto;
+			}
+		}
+		@media screen and (min-width: 768px) and (max-width: 1000px) {
+			#ticketModal .modal-dialog {
+      			max-width: 30em;
+      			margin: 4em auto;
+			}
+		}
+		@media screen and (min-width: 1024px) and (max-width: 1300px) {
+			#ticketModal .modal-dialog {
+      			max-width: 35em;
+      			margin: 4em auto;
+			}
+			footer {
+		    	margin-top: 70%;
+		    }
+		}
+		@media screen and (min-width: 1200px) {
+			footer {
+		    	margin-top: 10%;
+		    }
+		}
+		.shadow { 
+  display: block; 
+}
+/* layout */ 
+.media { 
+  margin-top: 2em;
+}
+.media .img { 
+  margin-left: 1em;
+}
+/* layout helpers */ 
+.cf:before,
+.cf:after {
+  content: " "; 
+  display: table;
+}
+.cf:after,
+.clear {
+  clear: both;
+}
+.inner-overlay-box {
+  color: #eee; 
+}
+/*
+ColorBox Core Style:
+The following CSS is consistent between example themes and should not be altered.
+ */
+  #colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+  #cboxOverlay{position:fixed; width:100%; height:100%;}
+  #cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+  #cboxContent{position:relative;}
+  #cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+  #cboxTitle{margin:0;}
+  #cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+  #cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+  .cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none;}
+  .cboxIframe{width:100%; height:100%; display:block; border:0;}
+  #colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+  /* 
+  User Style:
+  Change the following styles to modify the appearance of ColorBox.  They are
+  ordered & tabbed in a way that represents the nesting of the generated HTML.
+   */
+  #cboxOverlay{ /* background:url(../img/ui/overlay.png) repeat 0 0; */}
+  #colorbox{background-color: #444;background-color: rgba(0,0,0,.75);}
+  #colorbox[style] { /* top: 0 !important;  top: 0; bottom: 0; left: 0; right: 0; */ } 
+  #cboxTopLeft{width:21px; height:21px; /*background:url(../img/ui/controls.png) no-repeat -101px 0 */;}  
+  #cboxTopRight{width:21px; height:21px; /*background:url(../img/ui/controls.png) no-repeat -130px 0 */;}  
+  #cboxBottomLeft{width:21px; height:21px; /*background:url(../img/ui/controls.png) no-repeat -101px -29px */;}  
+  #cboxBottomRight{width:21px; height:21px; /*background:url(../img/ui/controls.png) no-repeat -130px -29px */;}  
+  #cboxMiddleLeft{width:21px; /*background:url(../img/ui/controls.png) left top repeat-y */;}  
+  #cboxMiddleRight{width:21px; /*background:url(../img/ui/controls.png) right top repeat-y */;}  
+  #cboxTopCenter{height:21px; /*background:url(../img/ui/border.png) 0 0 repeat-x */;}  
+  #cboxBottomCenter{height:21px; /*background:url(../img/ui/border.png) 0 -29px repeat-x */;}  
+  #cboxContent{/*background:#fff;*/ overflow:hidden;}
+  .cboxIframe{background:#fff;}
+  #cboxError{padding:50px; border:1px solid #ccc;}
+  #cboxLoadedContent{margin-bottom:28px;}
+  #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+  #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+  #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+  #cboxPrevious,
+  #cboxNext,
+  #cboxClose { 
+    background-image: url("https://lh3.googleusercontent.com/-aopYh60FBPw/URLYWU5Py3I/AAAAAAAAAVs/y8J7RIrgToM/s800/controls-custom.png"); 
+  background-repeat: no-repeat; }
+  #cboxPrevious{position:absolute; bottom:0; left:0; background-position: 0 0; width:25px; height:25px; text-indent:-9999px;}
+  #cboxPrevious:hover{background-position: 0 -25px;}
+  #cboxNext{position:absolute; bottom:0; left:27px; background-position: -25px 0; width:25px; height:25px; text-indent:-9999px;}
+  #cboxNext:hover{background-position: -25px -25px;}
+  #cboxLoadingOverlay{/*background:url(../img/ui/loading_background.png) no-repeat center center;*/}
+  #cboxLoadingGraphic{/*background:url(../img/ui/loading.gif) no-repeat center center;*/}
+  #cboxClose{position:absolute; bottom:0; right:20px; background-position: -50px 0; width:30px; height:30px; text-indent:-9999px;}
+  #cboxClose:hover{background-position:-50px -25px;}
+  @media only screen and (max-width: 480px) { 
+    header {
+      height: 200px;
+    }
+    .image-wrap { 
+      margin-top: 0; 
+    } 
+    .media .img img { 
+      width: 140px;
+      height: 220px;
+    }
+    .p-inner-window {
+      margin-right: 20em;
+      font-size: 0.5em;
+    }
+    .image-wrap {
+      overflow: hidden;
+    }
+    #colorbox,
+    #cboxWrapper,
+    #cboxContent,
+    #cboxLoadedContent {
+      min-height: 1200px;
+    }
+    #cboxTitle,
+    #cboxCurrent,
+    #cboxSlideshow,
+    #cboxPrevious,
+    #cboxNext, 
+    #cboxLoadingOverlay,
+    #cboxLoadingGraphic, 
+    #cboxClose {
+      top: 0; 
+      bottom: auto;
+    }
+    #cboxTitle {
+      margin-top: 100%;
+      margin-left: 2.5%;
+      text-align: left; 
+    }
+    #cboxClose { 
+      right: auto;
+      left: 0;
+      margin-left: 40%;
+    }
+  }
+  @media only screen and (max-width: 480px) { 
+    header {
+      height: 220px;
+    }
+    .image-wrap { 
+      margin-top: 0; 
+    }
+    .media .img img { 
+      max-width: 250px;
+    }
+    .p-inner-window {
+      margin-right: 20em;
+      margin-left: 2%;
+    }
+    .image-wrap {
+      overflow: hidden;
+    }
+    #colorbox,
+    #cboxWrapper,
+    #cboxContent,
+    #cboxLoadedContent {
+      min-height: 1200px;
+    }
+    #cboxTitle,
+    #cboxCurrent,
+    #cboxSlideshow,
+    #cboxPrevious,
+    #cboxNext, 
+    #cboxLoadingOverlay,
+    #cboxLoadingGraphic, 
+    #cboxClose {
+      top: 0; 
+      bottom: auto;
+    }
+    #cboxTitle {
+      margin-top: 100%;
+      margin-left: 2.5%;
+      text-align: left; 
+    }
+    #cboxClose { 
+      right: auto;
+      left: 0;
+      margin-left: 40%;
+    }
+
+  }
+
+  @media only screen and (min-width: 481px) and (max-width: 574px) { 
+    header {
+      height: 150px;
+    }
+    .image-wrap { 
+      margin-top: 0; 
+    }
+    .p-inner-window {
+      margin-right: 18em;
+      margin-left: 2%;
+      font-size: 0.8em;
+    }
+    .p-inner-window {
+      margin-bottom: 3em;
+    }
+    #colorbox,
+    #cboxWrapper,
+    #cboxContent,
+    #cboxLoadedContent {
+      min-height: 592px;
+      min-height: 736px;
+    }
+    #cboxTitle,
+    #cboxCurrent,
+    #cboxSlideshow,
+    #cboxPrevious,
+    #cboxNext, 
+    #cboxLoadingOverlay,
+    #cboxLoadingGraphic, 
+    #cboxClose {
+      top: 0; 
+      bottom: auto;
+    }
+    #cboxTitle {
+      margin-top: 92.5%;
+      margin-left: 2.5%;
+      text-align: left; 
+    }
+    #cboxClose { 
+      right: auto;
+      left: 0;
+      margin-left: 54%;
+    }
+  }
+  @media only screen and (min-width: 575px) and (max-width: 719px) { 
+    .p-inner-window {
+      margin: 0 20em 0 2.5%;
+    }
+    .image-wrap {
+      overflow: hidden;
+    } 
+    .hd h3,
+    .p-inner-window {
+      margin-right: 18em;
+      margin-left: 2.5%;
+    }
+    .p-inner-window {
+      margin-bottom: 3em;
+    }
+    #colorbox,
+    #cboxWrapper,
+    #cboxContent,
+    #cboxLoadedContent {
+      min-height: 592px;
+      min-height: 736px;
+    }
+    #cboxTitle,
+    #cboxCurrent,
+    #cboxSlideshow,
+    #cboxPrevious,
+    #cboxNext, 
+    #cboxLoadingOverlay,
+    #cboxLoadingGraphic, 
+    #cboxClose {
+      top: 0; 
+      bottom: auto;
+    }
+    #cboxTitle {
+      margin-top: 73%;
+      margin-left: 2.5%;
+      text-align: left; 
+    }
+    #cboxClose { 
+      right: auto;
+      left: 0;
+      margin-left: 54%;
+    }
+  }
+  @media only screen (min-width:700px) and (max-width:1000px) {
+  	.image-wrap {
+      overflow: visible;
+    }
+    .image-wrap {
+      width: 40em;  
+      margin: 1em auto 1em;
+    }
+    #cboxClose { 
+      right: auto;
+      left: 0;
+      margin-left: 54%;
+    }
+    .inline {
+    	margin: 2em;
+    }
+  }
+  @media only screen and (min-width: 720px) { 
+    .media,
+    .bd,
+    .ft { overflow:hidden; }
+    .media .img { 
+      float:left;
+      margin-left: 0.2em;
+    }
+    .media .img img { 
+      display:block; 
+    } 
+    #cboxClose { 
+      margin-bottom: 380px;
+    }
+  }
+  .inline {
+  	font-weight: bold;
+  }
+	</style>
+</head>
+<body style="background-color: black;">
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-dark bg-black fixed-top animated slow slideInDown" style="background-color: black;">
+		<div class="container-fluid">
+			<a href="index.php" class="navbar-brand" title="Go to TEDxIGDTU homepage"><img class="img-fluid logo" src="logos/IMG_2792.png" alt="TEDxIGDTU logo" width="20%" height="5%"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link tab" href="about.html">About<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link tab" href="theme.html">Theme</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link tab" href="events.html">Events</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link tab" href="https://tedxigdtu.wordpress.com/" target="_blank">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link tab" href="speakers.html">Speakers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link tab" href="team.html">Team</a>
+					</li>
+					<!--<li class="nav-item">
+						<a class="nav-link tab" href="#sponsors">Sponsors</a>
+					</li>
+					-->
+					
+					<li class="nav-item">
+						<a class="nav-link tab" href="#contact">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link tab" href="positions.html">Positions</a>
+					</li>
+					<li>
+			<button class="btn btn-secondary" ><a class="nav-link tab" href="ticket.php">Get Tickets</a></button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="padding"></div>
+	<div class="padding"></div>
+	<div class="padding"></div>
+	<div class="padding"></div>
+
+	<div class="container padding">
+		<div class="row text-center">
+			<div class="col-12">
+				<h1 class="display-4 animated slow delay-1s flipInX" style="color: gray;">Speakers</h1>
+				<hr class="light-100"> 
+				<br>
+				<ul class="polaroids image-wrap cf clear">
+					<li>
+						<a class="card group-cbox1 inline" href="#test1Content" title="Shwetambari Shetty">
+							<img class="card-img-top shadow" src="speakers/1.png" alt="Card image cap">
+							<img class="card-img-bottom" src="speakers/1 vector.jpg" alt="Card image cap">
+						</a>
+					</li>
+					<li>
+						<a class="card group-cbox1 inline" href="#test2Content" title="Naman Ahluwalia">
+							<img class="card-img-top shadow" src="speakers/2.jpg" alt="Card image cap">
+							<img class="card-img-bottom" src="speakers/2 vector.jpg" alt="Card image cap">
+						</a>
+					</li>
+					<li>
+						<a class="card group-cbox1 inline" href="#test3Content" title="Baisakhi Saha">
+							<img class="card-img-top shadow" src="speakers/3.jpg" alt="Card image cap">
+							<img class="card-img-bottom" src="speakers/3 vector.jpg" alt="Card image cap">
+						</a>
+					</li>
+					<li>
+						<a class="card group-cbox1 inline" href="#test4Content" title="Kanishk Priyadarshi">
+							<img class="card-img-top" src="speakers/4.jpg" alt="Card image cap">
+							<img class="card-img-bottom" src="speakers/4 vector.jpg" alt="Card image cap">
+						</a>
+					</li>
+					<li>
+						<a class="card group-cbox1 inline" href="#test5Content" title="Dr. Mona Varonica Campbell" style="font-size: 0.95em; font-weight: bold;">
+							<img class="card-img-top" src="speakers/5.jpg" alt="Card image cap" style="margin-left: 0.68em;">
+							<img class="card-img-bottom" src="speakers/5 vector.jpg" alt="Card image cap">
+						</a>
+					</li>
+					<li>
+						<a class="card group-cbox1 inline" href="#test6Content" title="Anu Aggarwal">
+							<img class="card-img-top" src="speakers/6.png" alt="Card image cap">
+							<img class="card-img-bottom" src="speakers/6 vector.jpg" alt="Card image cap">
+						</a>
+					</li>
+					<li>
+						<a class="card group-cbox1 inline" href="#test7Content" title="Pankaj Risbood">
+							<img class="card-img-top" src="speakers/7.png" alt="Card image cap">
+							<img class="card-img-bottom" src="speakers/7 vector.jpg" alt="Card image cap">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Image overlay -->
+	<div style='display:none'>
+    <div id="test1Content" class="inner-overlay-box">
+      <div class="media">
+        <a href="#" class="img">
+          <img alt="" src="speakers/1.png" class="img-inner-window" /></a>
+        <div class="bd">
+          <p class="p-inner-window" style="text-align: justify; font-size: 1em; margin: 0.3em;">With a Guinness Book of World record under her belt, this Zumba training instructor works closely with superstars like Hrithik Roshan and Tiger Shroff to curate their own Fitness Workouts. She has a TV show on the Tata Sky Active Fitness channel and her app CureFit also has some DIY (Do It Yourself) workouts to help the beginners and other people who prefer to work out on the go.</p> </div>
+      </div>
+    </div>
+  </div>
+
+  <div style='display:none'>
+    <div id="test2Content" class="inner-overlay-box">
+      <div class="media">
+        <a href="#" class="img">
+          <img alt="" src="speakers/2.jpg" class="img-inner-window" /></a>
+        <div class="bd">
+          <p class="p-inner-window" style="text-align: justify; font-size: 1em; margin: 0.3em;">Co-Founder at Clothes Box Foundation (CBF), a National Award winning social impact organization that bridges the gap between the donor and the receiver in the most transparent manner. Previously he was associated with names like Sapient, KPMG, and Nagarro. With acknowledgment from the likes of Mark Zuckerberg and Amitabh Bachchan and the recipient of the prestigious National Youth Award, Naman’s out-of-the-box organization provides clean clothes to the less fortunate across the world.</p> </div>
+      </div>
+    </div>
+  </div>
+
+  <div style='display:none'>
+    <div id="test3Content" class="inner-overlay-box">
+      <div class="media">
+        <a href="#" class="img">
+          <img alt="" src="speakers/3.jpg" class="img-inner-window" /></a>
+        <div class="bd">
+          <p class="p-inner-window" style="text-align: justify; font-size: 1em; margin: 0.3em;">From a software graduate to a marketing executive to an English teacher, interpreter and now an author, speaker, dancer, and actor. ‘Life is Abracadabra’ recounts 21 magical stories from this globetrotter’s journey with a different perspective towards life. This multifaceted lady introduced a new dance form, ‘Dance in abunDance’. This goes hand in hand with her lectures on various esoteric and exoteric topics, including following one’s dreams and tuning into our inner calling.</p> </div>
+      </div>
+    </div>
+  </div>
+
+  <div style='display:none'>
+    <div id="test4Content" class="inner-overlay-box">
+      <div class="media">
+        <a href="#" class="img">
+          <img alt="" src="speakers/4.jpg" class="img-inner-window" /></a>
+        <div class="bd">
+          <p class="p-inner-window" style="text-align: justify; font-size: 1em; margin: 0.3em;">After graduating in Social Sciences and Humanities, he started acting at Asmita Theatre during the second year of his college. This rigorous theatre training went on for two years where he acted in more than 900 Street plays and 40 Stage plays. He did a couple of videos with Pop Xo, DLF then got selected in an audition at Scoopwhoop, a well-known Indian media and news company. Currently, he is an actor and anchor at Scoopwhoop. He has done more than 70 videos with Scoopwhoop and its subsidiaries now and is one of their popular faces.</p> </div>
+      </div>
+    </div>
+  </div>
+
+  <div style='display:none'>
+    <div id="test5Content" class="inner-overlay-box">
+      <div class="media">
+        <a href="#" class="img">
+          <img alt="" src="speakers/5.jpg" class="img-inner-window" /></a>
+        <div class="bd">
+          <p class="p-inner-window" style="text-align: justify; font-size: 1em; margin: 0.3em;">Our next speaker has got degrees in the field of fashion from NIFT and London School of Fashion, and a Doctorate from Florida University. She has not only worked with A-listers like Kim Kardashian and Kate Moss but has even walked the ramp for ace designer Wendell Rodricks! Known as the backbone of the family by her father, Mona is a role model for the LGBTQ community. Mona is truly an inspiration for people to be confident about themselves and her story tells the society to let everyone live happily.</p> </div>
+      </div>
+    </div>
+  </div>
+
+  <div style='display:none'>
+    <div id="test6Content" class="inner-overlay-box">
+      <div class="media">
+        <a href="#" class="img">
+          <img alt="" src="speakers/6.png" class="img-inner-window" /></a>
+        <div class="bd">
+          <p class="p-inner-window" style="text-align: justify; font-size: 1em; margin: 0.3em;">A gold medalist in Sociology from Delhi University, her career started with a brief stint in modeling, VJing, and an appearance in the Doordarshan serial Isi Bahane in 1988, following which she was much in demand. She then made her Bollywood debut with the musical blockbuster Aashiqui which appealed to the public because of its innocent and sympathetic acting. Her later works include a Tamil film Thiruda Thiruda and a short movie The Cloud Door. The self-made young achiever stepped out of glamour when still a CoverGirl, only to head to the Himalayas and live as a yogi, monk, sanyasi by the Ganges.</p> </div>
+      </div>
+    </div>
+  </div>
+
+  <div style='display:none'>
+    <div id="test7Content" class="inner-overlay-box">
+      <div class="media">
+        <a href="#" class="img">
+          <img alt="" src="speakers/7.png" class="img-inner-window" /></a>
+        <div class="bd">
+          <p class="p-inner-window" style="text-align: justify; font-size: 1em; margin: 0.3em;">Data geek, obsessed with technology, long-distance runner, entrepreneur. The co-founder and Vice President of Data, Engineering at ZenDrive, a company committed to making roads safer using data and analytics, he is an expert in building large scale systems that deal with massive volumes of data. At WalmartLabs as director of engineering, he built tools for social media analysis including an engine for real-time analysis of 100B tweets. During his role as Engineering Manager at Google, Pankaj worked on Google's Speech Recognition Engine and Google Compute Engine. While at Google he also built the first ever English/Hindi bilingual Text to Speech (TTS) system. He bootstrapped and then scaled the voice search to many languages.
+</p> </div>
+      </div>
+    </div>
+  </div>
+	
+	<!-- Modal -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="modal fade" tabindex="-1" id="ticketModal" data-keyboard="false" data-backdrop="static">
+					<div class="modal-dialog modal-md">
+						<div class="modal-content">
+							<form method="POST" action="register.php">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title text-center">TEDxIGDTU on 23<sup>rd</sup> January, 2019</h4>
+								</div>
+								<div class="modal-body">
+										<!--<div class="form-group">
+										<div class="input-group-addon mb-2 mr-sm-2 mb-sm-0" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+										<input class="form-control" placeholder="Enter Full Name"name="Name" type="text" id="inputUserName" pattern="^[a-zA-Z ]{2,30}$" title="Must contain only letters" required="Please enter the details"/>
+									</div>
+									<div class="form-group">
+										<div class="input-group-addon mb-2 mr-sm-2 mb-sm-0" style="width: 2.6rem"><i class="fa fa-at"></i></div>
+										<input class="form-control" placeholder="Enter Email Id"name="Email" type="text" id="req" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Provide the correct email" required="Please enter the details"/>
+									</div>
+									<div class="form-group">
+										<div class="input-group-addon mb-2 mr-sm-2 mb-sm-0" style="width: 2.6rem"><i class="fa fa-phone"></i></div>
+										<input class="form-control" placeholder="Enter Phone Number" name="Phone_Number" type="tel" id="inputNumber" pattern="^(7|8|9)\d{9}$" title="Must contain only digits" required="Please enter the details"/>
+									</div>-->
+									Registration Starts on 3rd January    
+								</div>
+								<!--<div class="modal-footer">
+									<button type="submit" class="btn btn-danger">Submit</button>
+								</div>-->
+							
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--- Footer -->
+	<footer>
+		<div class="container-fluid padding" id="contact">
+			<div class="row welcome text-center">
+				<div class="col-12">
+					<h2 class="display-4 animated slow delay-1s flipInX">Contact</h2>
+				</div>
+				<div class="col-12 social animated slow delay-1s zoomInDown">
+					<a href="https://www.facebook.com/TEDxIGDTU/" target="_blank"><i class="fab fa-facebook"></i></a>
+					<a href="https://instagram.com/tedx_igdtu?utm_source=ig_profile_share&igshid=yzz49l19aes9" target="_blank"><i class="fab fa-instagram" ></i></a>
+					<a href="https://www.linkedin.com/company/tedxigdtu" target="_blank"><i class="fab fa-linkedin"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 text-center">
+			<hr class="light-100">
+			<h6 class="last animated slow delay-1s slideInUp">This independent TEDx event is operated under license from TED.</h6>
+		</div>
+	</footer>
+
+	<a href="javascript:" id="return-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<script>
+		$(window).scroll(function() {
+			if ($(this).scrollTop() >= 50) { 
+				$('#return-to-top').fadeIn(200);  
+			} else {
+				$('#return-to-top').fadeOut(200); 
+			}
+		});
+		$('#return-to-top').click(function() { 
+			$('body,html').animate({
+				scrollTop : 0                
+			}, 500);
+		});
+	</script>
+
+	<script>
+		/*!
+	jQuery ColorBox v1.3.34 - 2013-02-04
+	(c) 2013 Jack Moore - jacklmoore.com/colorbox
+	license: https://www.opensource.org/licenses/mit-license.php
+   * modified for the purpose of having an overlay in a smaller window.
+ */
+
+(function ($, document, window) {
+	var
+	// Default settings object.
+	// See http://jacklmoore.com/colorbox for details.
+	defaults = {
+		transition: "elastic",
+		speed: 300,
+		width: false,
+		initialWidth: "600",
+		innerWidth: false,
+		maxWidth: false,
+		height: false,
+		initialHeight: "450",
+		innerHeight: false,
+		maxHeight: false,
+		scalePhotos: true,
+		scrolling: true,
+		inline: false,
+		html: false,
+		iframe: false,
+		fastIframe: true,
+		photo: false,
+		href: false,
+		title: false,
+		rel: false,
+		opacity: 0.9,
+		preloading: true,
+		className: false,
+		
+		// alternate image paths for high-res displays
+		retinaImage: false,
+		retinaUrl: false,
+		retinaSuffix: '@2x.$1',
+
+		// internationalization
+		current: "image {current} of {total}",
+		previous: "previous",
+		next: "next",
+		close: "close",
+		xhrError: "This content failed to load.",
+		imgError: "This image failed to load.",
+
+		open: false,
+		returnFocus: true,
+		reposition: true,
+		loop: true,
+		slideshow: false,
+		slideshowAuto: true,
+		slideshowSpeed: 2500,
+		slideshowStart: "start slideshow",
+		slideshowStop: "stop slideshow",
+		photoRegex: /\.(gif|png|jp(e|g|eg)|bmp|ico)((#|\?).*)?$/i,
+
+		onOpen: false,
+		onLoad: false,
+		onComplete: false,
+		onCleanup: false,
+		onClosed: false,
+		overlayClose: true,
+		escKey: true,
+		arrowKey: true,
+		top: false,
+		bottom: false,
+		left: false,
+		right: false,
+		fixed: false,
+		data: undefined
+	},
+	
+	// Abstracting the HTML and event identifiers for easy rebranding
+	colorbox = 'colorbox',
+	prefix = 'cbox',
+	boxElement = prefix + 'Element',
+	
+	// Events
+	event_open = prefix + '_open',
+	event_load = prefix + '_load',
+	event_complete = prefix + '_complete',
+	event_cleanup = prefix + '_cleanup',
+	event_closed = prefix + '_closed',
+	event_purge = prefix + '_purge',
+	
+	// Special Handling for IE
+	isIE = !$.support.leadingWhitespace, // IE6 to IE8
+	isIE6 = isIE && !window.XMLHttpRequest, // IE6
+	event_ie6 = prefix + '_IE6',
+
+	// Cached jQuery Object Variables
+	$overlay,
+	$box,
+	$wrap,
+	$content,
+	$topBorder,
+	$leftBorder,
+	$rightBorder,
+	$bottomBorder,
+	$related,
+	$window,
+	$loaded,
+	$loadingBay,
+	$loadingOverlay,
+	$title,
+	$current,
+	$slideshow,
+	$next,
+	$prev,
+	$close,
+	$groupControls,
+	$events = $({}),
+	
+	// Variables for cached values or use across multiple functions
+	settings,
+	interfaceHeight,
+	interfaceWidth,
+	loadedHeight,
+	loadedWidth,
+	element,
+	index,
+	photo,
+	open,
+	active,
+	closing,
+	loadingTimer,
+	publicMethod,
+	div = "div",
+	className,
+	init;
+
+	// ****************
+	// HELPER FUNCTIONS
+	// ****************
+	
+	// Convience function for creating new jQuery objects
+	function $tag(tag, id, css) {
+		var element = document.createElement(tag);
+
+		if (id) {
+			element.id = prefix + id;
+		}
+
+		if (css) {
+			element.style.cssText = css;
+		}
+
+		return $(element);
+	}
+
+	// Determine the next and previous members in a group.
+	function getIndex(increment) {
+		var
+		max = $related.length,
+		newIndex = (index + increment) % max;
+		
+		return (newIndex < 0) ? max + newIndex : newIndex;
+	}
+
+	// Convert '%' and 'px' values to integers
+	function setSize(size, dimension) {
+		return Math.round((/%/.test(size) ? ((dimension === 'x' ? $window.width() : $window.height()) / 100) : 1) * parseInt(size, 10));
+	}
+	
+	// Checks an href to see if it is a photo.
+	// There is a force photo option (photo: true) for hrefs that cannot be matched by the regex.
+	function isImage(url) {
+		return settings.photo || settings.photoRegex.test(url);
+	}
+
+	function retinaUrl(url) {
+		return settings.retinaUrl && window.devicePixelRatio > 1 ? url.replace(settings.photoRegex, settings.retinaSuffix) : url;
+	}
+
+	// Assigns function results to their respective properties
+	function makeSettings() {
+		var i,
+			data = $.data(element, colorbox);
+		
+		if (data == null) {
+			settings = $.extend({}, defaults);
+			if (console && console.log) {
+				console.log('Error: cboxElement missing settings object');
+			}
+		} else {
+			settings = $.extend({}, data);
+		}
+		
+		for (i in settings) {
+			if ($.isFunction(settings[i]) && i.slice(0, 2) !== 'on') { // checks to make sure the function isn't one of the callbacks, they will be handled at the appropriate time.
+				settings[i] = settings[i].call(element);
+			}
+		}
+		
+		settings.rel = settings.rel || element.rel || $(element).data('rel') || 'nofollow';
+		settings.href = settings.href || $(element).attr('href');
+		settings.title = settings.title || element.title;
+		
+		if (typeof settings.href === "string") {
+			settings.href = $.trim(settings.href);
+		}
+	}
+
+	function trigger(event, callback) {
+		// for external use
+		$(document).trigger(event);
+
+		// for internal use
+		$events.trigger(event);
+
+		if ($.isFunction(callback)) {
+			callback.call(element);
+		}
+	}
+
+	// Slideshow functionality
+	function slideshow() {
+		var
+		timeOut,
+		className = prefix + "Slideshow_",
+		click = "click." + prefix,
+		clear,
+		set,
+		start,
+		stop;
+		
+		if (settings.slideshow && $related[1]) {
+			clear = function () {
+				clearTimeout(timeOut);
+			};
+
+			set = function () {
+				if (settings.loop || $related[index + 1]) {
+					timeOut = setTimeout(publicMethod.next, settings.slideshowSpeed);
+				}
+			};
+
+			start = function () {
+				$slideshow
+					.html(settings.slideshowStop)
+					.unbind(click)
+					.one(click, stop);
+
+				$events
+					.bind(event_complete, set)
+					.bind(event_load, clear)
+					.bind(event_cleanup, stop);
+
+				$box.removeClass(className + "off").addClass(className + "on");
+			};
+			
+			stop = function () {
+				clear();
+				
+				$events
+					.unbind(event_complete, set)
+					.unbind(event_load, clear)
+					.unbind(event_cleanup, stop);
+				
+				$slideshow
+					.html(settings.slideshowStart)
+					.unbind(click)
+					.one(click, function () {
+						publicMethod.next();
+						start();
+					});
+
+				$box.removeClass(className + "on").addClass(className + "off");
+			};
+			
+			if (settings.slideshowAuto) {
+				start();
+			} else {
+				stop();
+			}
+		} else {
+			$box.removeClass(className + "off " + className + "on");
+		}
+	}
+
+	function launch(target) {
+		if (!closing) {
+			
+			element = target;
+			
+			makeSettings();
+			
+			$related = $(element);
+			
+			index = 0;
+			
+			if (settings.rel !== 'nofollow') {
+				$related = $('.' + boxElement).filter(function () {
+					var data = $.data(this, colorbox),
+						relRelated;
+
+					if (data) {
+						relRelated =  $(this).data('rel') || data.rel || this.rel;
+					}
+					
+					return (relRelated === settings.rel);
+				});
+				index = $related.index(element);
+				
+				// Check direct calls to ColorBox.
+				if (index === -1) {
+					$related = $related.add(element);
+					index = $related.length - 1;
+				}
+			}
+			
+			if (!open) {
+				open = active = true; // Prevents the page-change action from queuing up if the visitor holds down the left or right keys.
+				
+				// Show colorbox so the sizes can be calculated in older versions of jQuery
+				$box.css({visibility:'hidden', display:'block'});
+				
+				$loaded = $tag(div, 'LoadedContent', 'width:0; height:0; overflow:hidden').appendTo($content);
+
+				// Cache values needed for size calculations
+				interfaceHeight = $topBorder.height() + $bottomBorder.height() + $content.outerHeight(true) - $content.height();//Subtraction needed for IE6
+				interfaceWidth = $leftBorder.width() + $rightBorder.width() + $content.outerWidth(true) - $content.width();
+				loadedHeight = $loaded.outerHeight(true);
+				loadedWidth = $loaded.outerWidth(true);
+
+				if (settings.returnFocus) {
+					$(element).blur();
+					$events.one(event_closed, function () {
+						$(element).focus();
+					});
+				}
+				
+				$overlay.css({
+					opacity: parseFloat(settings.opacity),
+					cursor: settings.overlayClose ? "pointer" : "auto",
+					visibility: 'visible'
+				}).show();
+				
+				// Opens inital empty ColorBox prior to content being loaded.
+				settings.w = setSize(settings.initialWidth, 'x');
+				settings.h = setSize(settings.initialHeight, 'y');
+				publicMethod.position();
+
+				if (isIE6) {
+					$window.bind('resize.' + event_ie6 + ' scroll.' + event_ie6, function () {
+						$overlay.css({width: $window.width(), height: $window.height(), top: $window.scrollTop(), left: $window.scrollLeft()});
+					}).trigger('resize.' + event_ie6);
+				}
+				
+				slideshow();
+
+				trigger(event_open, settings.onOpen);
+				
+				$groupControls.add($title).hide();
+				
+				$close.html(settings.close).show();
+			}
+			
+			publicMethod.load(true);
+		}
+	}
+
+	// ColorBox's markup needs to be added to the DOM prior to being called
+	// so that the browser will go ahead and load the CSS background images.
+	function appendHTML() {
+		if (!$box && document.body) {
+			init = false;
+
+			$window = $(window);
+			$box = $tag(div).attr({id: colorbox, 'class': isIE ? prefix + (isIE6 ? 'IE6' : 'IE') : ''}).hide();
+			$overlay = $tag(div, "Overlay", isIE6 ? 'position:absolute' : '').hide();
+			$loadingOverlay = $tag(div, "LoadingOverlay").add($tag(div, "LoadingGraphic"));
+			$wrap = $tag(div, "Wrapper");
+			$content = $tag(div, "Content").append(
+				$title = $tag(div, "Title"),
+				$current = $tag(div, "Current"),
+				$next = $tag(div, "Next"),
+				$prev = $tag(div, "Previous"),
+				$slideshow = $tag(div, "Slideshow"),
+				$close = $tag(div, "Close")
+			);
+			
+			$wrap.append( // The 3x3 Grid that makes up ColorBox
+				$tag(div).append(
+					$tag(div, "TopLeft"),
+					$topBorder = $tag(div, "TopCenter"),
+					$tag(div, "TopRight")
+				),
+				$tag(div, false, 'clear:left').append(
+					$leftBorder = $tag(div, "MiddleLeft"),
+					$content,
+					$rightBorder = $tag(div, "MiddleRight")
+				),
+				$tag(div, false, 'clear:left').append(
+					$tag(div, "BottomLeft"),
+					$bottomBorder = $tag(div, "BottomCenter"),
+					$tag(div, "BottomRight")
+				)
+			).find('div div').css({'float': 'left'});
+			
+			$loadingBay = $tag(div, false, 'position:absolute; width:9999px; visibility:hidden; display:none');
+			
+			$groupControls = $next.add($prev).add($current).add($slideshow);
+
+			$(document.body).append($overlay, $box.append($wrap, $loadingBay));
+		}
+	}
+
+	// Add ColorBox's event bindings
+	function addBindings() {
+		function clickHandler(e) {
+			// ignore non-left-mouse-clicks and clicks modified with ctrl / command, shift, or alt.
+			// See: http://jacklmoore.com/notes/click-events/
+			if (!(e.which > 1 || e.shiftKey || e.altKey || e.metaKey)) {
+				e.preventDefault();
+				launch(this);
+			}
+		}
+
+		if ($box) {
+			if (!init) {
+				init = true;
+
+				// Anonymous functions here keep the public method from being cached, thereby allowing them to be redefined on the fly.
+				$next.click(function () {
+					publicMethod.next();
+				});
+				$prev.click(function () {
+					publicMethod.prev();
+				});
+				$close.click(function () {
+					publicMethod.close();
+				});
+				$overlay.click(function () {
+					if (settings.overlayClose) {
+						publicMethod.close();
+					}
+				});
+				
+				// Key Bindings
+				$(document).bind('keydown.' + prefix, function (e) {
+					var key = e.keyCode;
+					if (open && settings.escKey && key === 27) {
+						e.preventDefault();
+						publicMethod.close();
+					}
+					if (open && settings.arrowKey && $related[1]) {
+						if (key === 37) {
+							e.preventDefault();
+							$prev.click();
+						} else if (key === 39) {
+							e.preventDefault();
+							$next.click();
+						}
+					}
+				});
+
+				if ($.isFunction($.fn.on)) {
+					$(document).on('click.'+prefix, '.'+boxElement, clickHandler);
+				} else { // For jQuery 1.3.x -> 1.6.x
+					$('.'+boxElement).live('click.'+prefix, clickHandler);
+				}
+			}
+			return true;
+		}
+		return false;
+	}
+
+	// Don't do anything if ColorBox already exists.
+	if ($.colorbox) {
+		return;
+	}
+
+	// Append the HTML when the DOM loads
+	$(appendHTML);
+
+
+	// ****************
+	// PUBLIC FUNCTIONS
+	// Usage format: $.fn.colorbox.close();
+	// Usage from within an iframe: parent.$.fn.colorbox.close();
+	// ****************
+	
+	publicMethod = $.fn[colorbox] = $[colorbox] = function (options, callback) {
+		var $this = this;
+		
+		options = options || {};
+		
+		appendHTML();
+
+		if (addBindings()) {
+			if ($.isFunction($this)) { // assume a call to $.colorbox
+				$this = $('<a/>');
+				options.open = true;
+			} else if (!$this[0]) { // colorbox being applied to empty collection
+				return $this;
+			}
+			
+			if (callback) {
+				options.onComplete = callback;
+			}
+			
+			$this.each(function () {
+				$.data(this, colorbox, $.extend({}, $.data(this, colorbox) || defaults, options));
+			}).addClass(boxElement);
+			
+			if (($.isFunction(options.open) && options.open.call($this)) || options.open) {
+				launch($this[0]);
+			}
+		}
+		
+		return $this;
+	};
+
+	publicMethod.position = function (speed, loadedCallback) {
+		var
+		css,
+		top = 0,
+		left = 0,
+		offset = $box.offset(),
+		scrollTop,
+		scrollLeft;
+		
+		$window.unbind('resize.' + prefix);
+
+		// remove the modal so that it doesn't influence the document width/height
+		$box.css({top: -9e4, left: -9e4});
+
+		scrollTop = $window.scrollTop();
+		scrollLeft = $window.scrollLeft();
+
+		if (settings.fixed && !isIE6) {
+			offset.top -= scrollTop;
+			offset.left -= scrollLeft;
+			$box.css({position: 'fixed'});
+		} else {
+			top = scrollTop;
+			left = scrollLeft;
+			$box.css({position: 'absolute'});
+		}
+
+		// keeps the top and left positions within the browser's viewport.
+		if (settings.right !== false) {
+			left += Math.max($window.width() - settings.w - loadedWidth - interfaceWidth - setSize(settings.right, 'x'), 0);
+		} else if (settings.left !== false) {
+			left += setSize(settings.left, 'x');
+		} else {
+			left += Math.round(Math.max($window.width() - settings.w - loadedWidth - interfaceWidth, 0) / 2);
+		}
+		
+		if (settings.bottom !== false) {
+			top += Math.max($window.height() - settings.h - loadedHeight - interfaceHeight - setSize(settings.bottom, 'y'), 0);
+		} else if (settings.top !== false) {
+			top += setSize(settings.top, 'y');
+		} else {
+			top += Math.round(Math.max($window.height() - settings.h - loadedHeight - interfaceHeight, 0) / 2);
+		}
+
+		$box.css({top: offset.top, left: offset.left, visibility:'visible'});
+
+		// setting the speed to 0 to reduce the delay between same-sized content.
+		speed = ($box.width() === settings.w + loadedWidth && $box.height() === settings.h + loadedHeight) ? 0 : speed || 0;
+		
+		// this gives the wrapper plenty of breathing room so it's floated contents can move around smoothly,
+		// but it has to be shrank down around the size of div#colorbox when it's done.  If not,
+		// it can invoke an obscure IE bug when using iframes.
+		$wrap[0].style.width = $wrap[0].style.height = "9999px";
+		
+		function modalDimensions(that) {
+			$topBorder[0].style.width = $bottomBorder[0].style.width = $content[0].style.width = (parseInt(that.style.width,10) - interfaceWidth)+'px';
+			$content[0].style.height = $leftBorder[0].style.height = $rightBorder[0].style.height = (parseInt(that.style.height,10) - interfaceHeight)+'px';
+		}
+
+		css = {width: settings.w + loadedWidth + interfaceWidth, height: settings.h + loadedHeight + interfaceHeight, top: top, left: left};
+
+		if(speed===0){ // temporary workaround to side-step jQuery-UI 1.8 bug (https://bugs.jquery.com/ticket/12273)
+			$box.css(css);
+		}
+		$box.dequeue().animate(css, {
+			duration: speed,
+			complete: function () {
+				modalDimensions(this);
+				
+				active = false;
+				
+				// shrink the wrapper down to exactly the size of colorbox to avoid a bug in IE's iframe implementation.
+				$wrap[0].style.width = (settings.w + loadedWidth + interfaceWidth) + "px";
+				$wrap[0].style.height = (settings.h + loadedHeight + interfaceHeight) + "px";
+				
+				if (settings.reposition) {
+					setTimeout(function () {  // small delay before binding onresize due to an IE8 bug.
+						$window.bind('resize.' + prefix, publicMethod.position);
+					}, 1);
+				}
+
+				if (loadedCallback) {
+					loadedCallback();
+				}
+			},
+			step: function () {
+				modalDimensions(this);
+			}
+		});
+	};
+
+	publicMethod.resize = function (options) {
+		if (open) {
+			options = options || {};
+			
+			if (options.width) {
+				settings.w = setSize(options.width, 'x') - loadedWidth - interfaceWidth;
+			}
+			if (options.innerWidth) {
+				settings.w = setSize(options.innerWidth, 'x');
+			}
+			$loaded.css({width: settings.w});
+			
+			if (options.height) {
+				settings.h = setSize(options.height, 'y') - loadedHeight - interfaceHeight;
+			}
+			if (options.innerHeight) {
+				settings.h = setSize(options.innerHeight, 'y');
+			}
+			if (!options.innerHeight && !options.height) {
+				$loaded.css({height: "auto"});
+				settings.h = $loaded.height();
+			}
+			$loaded.css({height: settings.h});
+			
+			publicMethod.position(settings.transition === "none" ? 0 : settings.speed);
+		}
+	};
+
+	publicMethod.prep = function (object) {
+		if (!open) {
+			return;
+		}
+		
+		var callback, speed = settings.transition === "none" ? 0 : settings.speed;
+		
+		$loaded.empty().remove(); // Using empty first may prevent some IE7 issues.
+
+		$loaded = $tag(div, 'LoadedContent').append(object);
+		
+		function getWidth() {
+			settings.w = settings.w || $loaded.width();
+			settings.w = settings.mw && settings.mw < settings.w ? settings.mw : settings.w;
+			return settings.w;
+		}
+		function getHeight() {
+			settings.h = settings.h || $loaded.height();
+			settings.h = settings.mh && settings.mh < settings.h ? settings.mh : settings.h;
+			return settings.h;
+		}
+		
+		$loaded.hide()
+		.appendTo($loadingBay.show())// content has to be appended to the DOM for accurate size calculations.
+		.css({width: getWidth(), overflow: settings.scrolling ? 'auto' : 'hidden'})
+		.css({height: getHeight()})// sets the height independently from the width in case the new width influences the value of height.
+		.prependTo($content);
+		
+		$loadingBay.hide();
+		
+		// floating the IMG removes the bottom line-height and fixed a problem where IE miscalculates the width of the parent element as 100% of the document width.
+		
+		$(photo).css({'float': 'none'});
+
+		callback = function () {
+			var total = $related.length,
+				iframe,
+				frameBorder = 'frameBorder',
+				allowTransparency = 'allowTransparency',
+				complete;
+			
+			if (!open) {
+				return;
+			}
+			
+			function removeFilter() {
+				if (isIE) {
+					$box[0].style.removeAttribute('filter');
+				}
+			}
+			
+			complete = function () {
+				clearTimeout(loadingTimer);
+				$loadingOverlay.remove();
+				trigger(event_complete, settings.onComplete);
+			};
+			
+			if (isIE) {
+				//This fadeIn helps the bicubic resampling to kick-in.
+				if (photo) {
+					$loaded.fadeIn(100);
+				}
+			}
+			
+			$title.html(settings.title).add($loaded).show();
+			
+			if (total > 1) { // handle grouping
+				if (typeof settings.current === "string") {
+					$current.html(settings.current.replace('{current}', index + 1).replace('{total}', total)).show();
+				}
+				
+				$next[(settings.loop || index < total - 1) ? "show" : "hide"]().html(settings.next);
+				$prev[(settings.loop || index) ? "show" : "hide"]().html(settings.previous);
+				
+				if (settings.slideshow) {
+					$slideshow.show();
+				}
+				
+				// Preloads images within a rel group
+				if (settings.preloading) {
+					$.each([getIndex(-1), getIndex(1)], function(){
+						var src,
+							img,
+							i = $related[this],
+							data = $.data(i, colorbox);
+
+						if (data && data.href) {
+							src = data.href;
+							if ($.isFunction(src)) {
+								src = src.call(i);
+							}
+						} else {
+							src = $(i).attr('href');
+						}
+
+						if (src && (isImage(src) || data.photo)) {
+							img = new Image();
+							img.src = src;
+						}
+					});
+				}
+			} else {
+				$groupControls.hide();
+			}
+			
+			if (settings.iframe) {
+				iframe = $tag('iframe')[0];
+				
+				if (frameBorder in iframe) {
+					iframe[frameBorder] = 0;
+				}
+				
+				if (allowTransparency in iframe) {
+					iframe[allowTransparency] = "true";
+				}
+
+				if (!settings.scrolling) {
+					iframe.scrolling = "no";
+				}
+				
+				$(iframe)
+					.attr({
+						src: settings.href,
+						name: (new Date()).getTime(), // give the iframe a unique name to prevent caching
+						'class': prefix + 'Iframe',
+						allowFullScreen : true, // allow HTML5 video to go fullscreen
+						webkitAllowFullScreen : true,
+						mozallowfullscreen : true
+					})
+					.one('load', complete)
+					.appendTo($loaded);
+				
+				$events.one(event_purge, function () {
+					iframe.src = "//about:blank";
+				});
+
+				if (settings.fastIframe) {
+					$(iframe).trigger('load');
+				}
+			} else {
+				complete();
+			}
+			
+			if (settings.transition === 'fade') {
+				$box.fadeTo(speed, 1, removeFilter);
+			} else {
+				removeFilter();
+			}
+		};
+		
+		if (settings.transition === 'fade') {
+			$box.fadeTo(speed, 0, function () {
+				publicMethod.position(0, callback);
+			});
+		} else {
+			publicMethod.position(speed, callback);
+		}
+	};
+
+	publicMethod.load = function (launched) {
+		var href, setResize, prep = publicMethod.prep, $inline;
+		
+		active = true;
+		
+		photo = false;
+		
+		element = $related[index];
+		
+		if (!launched) {
+			makeSettings();
+		}
+
+		if (className) {
+			$box.add($overlay).removeClass(className);
+		}
+		if (settings.className) {
+			$box.add($overlay).addClass(settings.className);
+		}
+		className = settings.className;
+		
+		trigger(event_purge);
+		
+		trigger(event_load, settings.onLoad);
+		
+		settings.h = settings.height ?
+				setSize(settings.height, 'y') - loadedHeight - interfaceHeight :
+				settings.innerHeight && setSize(settings.innerHeight, 'y');
+		
+		settings.w = settings.width ?
+				setSize(settings.width, 'x') - loadedWidth - interfaceWidth :
+				settings.innerWidth && setSize(settings.innerWidth, 'x');
+		
+		// Sets the minimum dimensions for use in image scaling
+		settings.mw = settings.w;
+		settings.mh = settings.h;
+		
+		// Re-evaluate the minimum width and height based on maxWidth and maxHeight values.
+		// If the width or height exceed the maxWidth or maxHeight, use the maximum values instead.
+		if (settings.maxWidth) {
+			settings.mw = setSize(settings.maxWidth, 'x') - loadedWidth - interfaceWidth;
+			settings.mw = settings.w && settings.w < settings.mw ? settings.w : settings.mw;
+		}
+		if (settings.maxHeight) {
+			settings.mh = setSize(settings.maxHeight, 'y') - loadedHeight - interfaceHeight;
+			settings.mh = settings.h && settings.h < settings.mh ? settings.h : settings.mh;
+		}
+		
+		href = settings.href;
+		
+		loadingTimer = setTimeout(function () {
+			$loadingOverlay.appendTo($content);
+		}, 100);
+		
+		if (settings.inline) {
+			// Inserts an empty placeholder where inline content is being pulled from.
+			// An event is bound to put inline content back when ColorBox closes or loads new content.
+			$inline = $tag(div).hide().insertBefore($(href)[0]);
+
+			$events.one(event_purge, function () {
+				$inline.replaceWith($loaded.children());
+			});
+
+			prep($(href));
+		} else if (settings.iframe) {
+			// IFrame element won't be added to the DOM until it is ready to be displayed,
+			// to avoid problems with DOM-ready JS that might be trying to run in that iframe.
+			prep(" ");
+		} else if (settings.html) {
+			prep(settings.html);
+		} else if (isImage(href)) {
+
+			href = retinaUrl(href);
+
+			$(photo = new Image())
+			.addClass(prefix + 'Photo')
+			.bind('error',function () {
+				settings.title = false;
+				prep($tag(div, 'Error').html(settings.imgError));
+			})
+			.one('load', function () {
+				var percent;
+
+				if (settings.retinaImage && window.devicePixelRatio > 1) {
+					photo.height = photo.height / window.devicePixelRatio;
+					photo.width = photo.width / window.devicePixelRatio;
+				}
+
+				if (settings.scalePhotos) {
+					setResize = function () {
+						photo.height -= photo.height * percent;
+						photo.width -= photo.width * percent;
+					};
+					if (settings.mw && photo.width > settings.mw) {
+						percent = (photo.width - settings.mw) / photo.width;
+						setResize();
+					}
+					if (settings.mh && photo.height > settings.mh) {
+						percent = (photo.height - settings.mh) / photo.height;
+						setResize();
+					}
+				}
+				
+				if (settings.h) {
+					photo.style.marginTop = Math.max(settings.mh - photo.height, 0) / 2 + 'px';
+				}
+				
+				if ($related[1] && (settings.loop || $related[index + 1])) {
+					photo.style.cursor = 'pointer';
+					photo.onclick = function () {
+						publicMethod.next();
+					};
+				}
+				
+				if (isIE) {
+					photo.style.msInterpolationMode = 'bicubic';
+				}
+				
+				setTimeout(function () { // A pause because Chrome will sometimes report a 0 by 0 size otherwise.
+					prep(photo);
+				}, 1);
+			});
+			
+			setTimeout(function () { // A pause because Opera 10.6+ will sometimes not run the onload function otherwise.
+				photo.src = href;
+			}, 1);
+		} else if (href) {
+			$loadingBay.load(href, settings.data, function (data, status) {
+				prep(status === 'error' ? $tag(div, 'Error').html(settings.xhrError) : $(this).contents());
+			});
+		}
+	};
+		
+	// Navigates to the next page/image in a set.
+	publicMethod.next = function () {
+		if (!active && $related[1] && (settings.loop || $related[index + 1])) {
+			index = getIndex(1);
+			publicMethod.load();
+		}
+	};
+	
+	publicMethod.prev = function () {
+		if (!active && $related[1] && (settings.loop || index)) {
+			index = getIndex(-1);
+			publicMethod.load();
+		}
+	};
+
+	// Note: to use this within an iframe use the following format: parent.$.fn.colorbox.close();
+	publicMethod.close = function () {
+		if (open && !closing) {
+			
+			closing = true;
+			
+			open = false;
+			
+			trigger(event_cleanup, settings.onCleanup);
+			
+			$window.unbind('.' + prefix + ' .' + event_ie6);
+			
+			$overlay.fadeTo(200, 0);
+			
+			$box.stop().fadeTo(300, 0, function () {
+			
+				$box.add($overlay).css({'opacity': 1, cursor: 'auto'}).hide();
+				
+				trigger(event_purge);
+				
+				$loaded.empty().remove(); // Using empty first may prevent some IE7 issues.
+				
+				setTimeout(function () {
+					closing = false;
+					trigger(event_closed, settings.onClosed);
+				}, 1);
+			});
+		}
+	};
+
+	// Removes changes ColorBox made to the document, but does not remove the plugin
+	// from jQuery.
+	publicMethod.remove = function () {
+		$([]).add($box).add($overlay).remove();
+		$box = null;
+		$('.' + boxElement)
+			.removeData(colorbox)
+			.removeClass(boxElement);
+
+		$(document).unbind('click.'+prefix);
+	};
+
+	// A method for fetching the current element ColorBox is referencing.
+	// returns a jQuery object.
+	publicMethod.element = function () {
+		return $(element);
+	};
+
+	publicMethod.settings = defaults;
+
+}(jQuery, document, window));
+
+$(function(){
+
+$(".group-cbox1").colorbox({rel:'group-cbox1', transition:"none", width:"736px", height:"448px"});
+
+$(".inline").colorbox({inline:true, width:"736px"});
+
+});
+	</script>
+
+</body>
+</html>

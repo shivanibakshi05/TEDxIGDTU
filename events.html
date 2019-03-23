@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TEDxIGDTU</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="apple-touch-icon" sizes="57x57" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="logos/IMG_2792.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="logos/IMG_2792.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="logos/IMG_2792.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="logos/IMG_2792.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="logos/IMG_2792.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logos/IMG_2792.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="event_style.css" rel="stylesheet"> <!-- Events CSS -->
+    <link href="animate.min.css" rel="stylesheet"> <!-- Animations CSS -->
+    <style type="text/css">
+.carousel-inner img {
+      width: 100%;
+      
+  }
+  
+    #ticketModal .modal-dialog {
+        max-width: 30em;
+        margin: 4em auto;
+    }
+    #ticketModal .modal-body {
+        position: relative;
+        padding: 1.3em;
+    }
+    #ticketModal .close {
+        position:absolute;
+        right:-30px;
+        top:0;
+        z-index:999;
+        font-size:2rem;
+        font-weight: normal;
+        color:#fff;
+        opacity:1;
+    }
+          .timeline-centered {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-centered:before,
+        .timeline-centered:after {
+            content: " ";
+            display: table;
+        }
+        
+        .timeline-centered:after {
+            clear: both;
+        }
+        
+        .timeline-centered:before,
+        .timeline-centered:after {
+            content: " ";
+            display: table;
+        }
+        
+        .timeline-centered:after {
+            clear: both;
+        }
+        
+        .timeline-centered:before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 4px;
+            background: #f5f5f6;
+            /*left: 50%;*/
+            top: 20px;
+            bottom: 20px;
+            margin-left: 30px;
+        }
+        
+        .timeline-centered .timeline-entry {
+            position: relative;
+            /*width: 50%;
+        float: right;*/
+            margin-top: 5px;
+            margin-left: 30px;
+            margin-bottom: 10px;
+            clear: both;
+        }
+        
+        .timeline-centered .timeline-entry:before,
+        .timeline-centered .timeline-entry:after {
+            content: " ";
+            display: table;
+        }
+        
+        .timeline-centered .timeline-entry:after {
+            clear: both;
+        }
+        
+        .timeline-centered .timeline-entry:before,
+        .timeline-centered .timeline-entry:after {
+            content: " ";
+            display: table;
+        }
+        
+        .timeline-centered .timeline-entry:after {
+            clear: both;
+        }
+        
+        .timeline-centered .timeline-entry.begin {
+            margin-bottom: 0;
+        }
+        
+        .timeline-centered .timeline-entry.left-aligned {
+            float: left;
+        }
+        
+        .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner {
+            margin-left: 0;
+            margin-right: -18px;
+        }
+        
+        .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-time {
+            left: auto;
+            right: -100px;
+            text-align: left;
+        }
+        
+        .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-icon {
+            float: right;
+        }
+        
+        .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-label {
+            margin-left: 0;
+            margin-right: 70px;
+        }
+        
+        .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-label:after {
+            left: auto;
+            right: 0;
+            margin-left: 0;
+            margin-right: -9px;
+            -moz-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner {
+            position: relative;
+            margin-left: -20px;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner:before,
+        .timeline-centered .timeline-entry .timeline-entry-inner:after {
+            content: " ";
+            display: table;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner:after {
+            clear: both;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner:before,
+        .timeline-centered .timeline-entry .timeline-entry-inner:after {
+            content: " ";
+            display: table;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner:after {
+            clear: both;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time {
+            position: absolute;
+            left: -100px;
+            text-align: right;
+            padding: 10px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time > span {
+            display: block;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time > span:first-child {
+            font-size: 15px;
+            font-weight: bold;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time > span:last-child {
+            font-size: 12px;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
+            background: #fff;
+            color: #737881;
+            display: block;
+            width: 54px;
+            height: 54px;
+            -webkit-background-clip: padding-box;
+            -moz-background-clip: padding;
+            background-clip: padding-box;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 25px;
+            text-align: center;
+            -moz-box-shadow: 0 0 0 5px #f5f5f6;
+            -webkit-box-shadow: 0 0 0 5px #f5f5f6;
+            box-shadow: 0 0 0 5px #f5f5f6;
+            line-height: 40px;
+            font-size: 15px;
+            float: left;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-primary {
+            background-color: rgb(220,0,0) !important;
+            color: #fff;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-secondary {
+            background-color: rgb(220,0,0) !important;
+            color: #fff;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-success {
+            background-color: rgb(220,0,0) !important;
+            color: #fff;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-info {
+            background-color: rgb(220,0,0) !important;
+            color: #fff;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-danger {
+            background-color: rgb(220,0,0) !important;
+            color: #fff;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+            
+            padding: 1em;
+            margin-left: 60px;
+            -webkit-background-clip: padding-box;
+            -moz-background-clip: padding;
+            background-clip: padding-box;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 9px 9px 9px 0;
+            border-color: transparent #f5f5f6 transparent transparent;
+            left: 0;
+            top: 10px;
+            margin-left: -9px;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2,
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p {
+            color: antiquewhite;
+            font-family: "Noto Sans", sans-serif;
+            font-size: 20px;
+            margin: 0;
+            line-height: 1.428571429;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p + p {
+            margin-top: 15px;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
+            font-size: 30px;
+    color: ghostwhite;
+            margin-bottom: 10px;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a {
+            color: #303641;
+        }
+        
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
+            -webkit-opacity: .6;
+            -moz-opacity: .6;
+            opacity: .6;
+            -ms-filter: alpha(opacity=60);
+            filter: alpha(opacity=60);
+        }
+        @media screen and (max-width: 800px) {
+    .welcome {
+      padding-top: 0;
+    }
+    #ticketModal .modal-dialog {
+        max-width: 20em;
+        margin: 5em auto;
+    }
+    .social a {
+        font-size: 2.5em;
+        padding: 0.4rem;
+      }
+}
+@media screen and (max-width: 600px) {
+    .welcome {
+      padding-top: 0vh;
+    }
+    .figures {
+      padding-top: 10vh;
+    }
+    #ticketModal .modal-dialog {
+        max-width: 20em;
+        margin: 5em auto;
+    }
+    .social a {
+        font-size: 2.5em;
+        padding: 0.4rem;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 500px) {
+    #ticketModal .modal-dialog {
+        max-width: 15em;
+        margin: 3em auto;
+    }
+}
+@media screen and (min-width: 360px) and (max-width: 600px) {
+    #ticketModal .modal-dialog {
+        max-width: 18em;
+        margin: 5em auto;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    #ticketModal .modal-dialog {
+        max-width: 30em;
+        margin: 4em auto;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+    #ticketModal .modal-dialog {
+        max-width: 35em;
+        margin: 4em auto;
+    }
+}
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: black;">
+  
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark bg-black fixed-top animated slow slideInDown" style="background-color: black;">
+        <div class="container-fluid">
+            <a href="index.php" class="navbar-brand" title="Go to TEDxIGDTU homepage"><img class="img-fluid logo" src="logos/IMG_2792.png" alt="TEDxIGDTU logo" width="20%" height="5%"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link tab" href="about.html">About<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tab" href="theme.html">Theme</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link tab" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tab" href="https://tedxigdtu.wordpress.com/" target="_blank">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tab" href="speakers.html">Speakers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tab" href="team.html">Team</a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link tab" href="#sponsors">Sponsors</a>
+                    </li>
+                    -->
+                    
+                    <li class="nav-item">
+                        <a class="nav-link tab" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tab" href="positions.html">Positions</a>
+                    </li>
+                    <li>
+                      <button class="btn btn-secondary" ><a class="nav-link tab" href="ticket.php">Get Tickets</a></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="padding"></div>
+    <div class="padding"></div>
+    <div class="padding"></div>  
+
+    <!-- Modal -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="modal fade" tabindex="-1" id="ticketModal" data-keyboard="false" data-backdrop="static">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+                            <form method="POST" action="register.php">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title text-center">TEDxIGDTU on 23<sup>rd</sup> January, 2019</h4>
+                                </div>
+                                <div class="modal-body">
+                                        <!--<div class="form-group">
+                                        <div class="input-group-addon mb-2 mr-sm-2 mb-sm-0" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+                                        <input class="form-control" placeholder="Enter Full Name"name="Name" type="text" id="inputUserName" pattern="^[a-zA-Z ]{2,30}$" title="Must contain only letters" required="Please enter the details"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group-addon mb-2 mr-sm-2 mb-sm-0" style="width: 2.6rem"><i class="fa fa-at"></i></div>
+                                        <input class="form-control" placeholder="Enter Email Id"name="Email" type="text" id="req" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Provide the correct email" required="Please enter the details"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group-addon mb-2 mr-sm-2 mb-sm-0" style="width: 2.6rem"><i class="fa fa-phone"></i></div>
+                                        <input class="form-control" placeholder="Enter Phone Number" name="Phone_Number" type="tel" id="inputNumber" pattern="^(7|8|9)\d{9}$" title="Must contain only digits" required="Please enter the details"/>
+                                    </div>-->
+                                    Registration Starts on 3rd January    
+                                </div>
+                                <!--<div class="modal-footer">
+                                    <button type="submit" class="btn btn-danger">Submit</button>
+                                </div>-->
+                            
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="container">
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="photos/o1.jpg" alt="orientation" width="1100" height="500">
+      <div class="carousel-caption" style=" background-color: black; width: 100% line-height:initial;">
+        <h3 style=" color:white; font-weight: bold;">TEDx at ConnecTED</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="photos/o2.jpg" alt="orientation" width="1100" height="500">
+       <div class="carousel-caption" style=" background-color: black; width: 100% line-height:initial;">
+        <h3 style=" color:white; font-weight: bold;">ConnecTED: Orientation organised</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="photos/o3.jpg" alt="orientation" width="1100" height="500">
+       <div class="carousel-caption" style=" background-color: black; width: 100% line-height:initial;">
+        <h3 style=" color:white; font-weight: bold;">ConnecTED: Team</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="photos/d1.jpg" alt="fete" width="1100" height="500">
+       <div class="carousel-caption" style=" background-color: black; width: 100% line-height:initial;">
+        <h3 style=" color:white; font-weight: bold;">Diwali Fete</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="photos/d2.jpg" alt="fete" width="1100" height="500">
+       <div class="carousel-caption" style=" background-color: black; width: 100% line-height:initial;">
+        <h3 style=" color:white; font-weight: bold;">Diwali Fete</h3>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+
+<!--  end of slideshow -->
+      <!-- Page Content -->
+      <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 style="color: gray;" class="display animated slow pulse">OUR EVENTS</h1>
+                <hr class="light">
+            </div>
+            <div class="col-12">
+                <p class="lead">Before conducting a TEDx event, it is essential for the team to make the people aware about TEDx. Following are the initiatives taken by TEDxIGDTU:</p>
+            </div>
+            <div class="timeline-centered">
+                <article class="timeline-entry">
+                    <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-danger">
+                                    <i class="entypo-feather"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2>ConnecTED</h2>
+                                    <p class="lead"> 
+                                       ConnecTED marked first step of the journey of TEDxIGDTU 2019. It was an orientation and welcome to all the freshers in the college, creating awareness and spreading the word about the TEDx community.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-secondary">
+                                    <i class="entypo-suitcase"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2>X Quest</h2>
+                                    <p class="lead">Next in line was a fun event, X Quest, encouraging the students to guess the theme for the upcoming conference.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-info">
+                                    <i class="entypo-location"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2>Diwali Fete</h2>
+                                    <p class="lead">To expand our bases, the team also participated in the annual Diwali Fete of the college, spreading out the word to other colleges too.</p>
+                                </div>
+                        </article>
+                        </div>
+                    </div>
+                </div>
+                <!----Code------end----------------------------------->
+            </div>
+            <!-- /.container -->
+
+    <!-- Event Flow -->
+      <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 style="color: gray; font-size: 2.8em;" class="display animated delay-3s slow pulse">EVENT FLOW - 23 <sup>RD</sup> JANUARY</h1>
+                <hr class="light">
+            </div>
+            <div class="timeline-centered">
+                <article class="timeline-entry">
+                    <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-danger">
+                                    <i class="entypo-feather"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2>Registrations open for TEDxIGDTU</h2>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-secondary">
+                                    <i class="entypo-suitcase"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2>A video showcasing the founders will be played</h2>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-info">
+                                    <i class="entypo-location"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2>The host will start the program</h2>
+                                </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-info">
+                                    <i class="entypo-location"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2 style="font-family: Comic Sans, Comic Sans MS, cursive; color: rgb(220,0,0);">Shwetambari Shetty will deliver her talk</h2>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                    <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-danger">
+                                    <i class="entypo-feather"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2>The host will introduce the next speaker</h2>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-secondary">
+                                    <i class="entypo-suitcase"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2 style="font-family: Comic Sans, Comic Sans MS, cursive; color: rgb(220,0,0);">Dr Mona Varonica Campbell  will deliver her talk</h2>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-info">
+                                    <i class="entypo-location"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2>A band performance to enthrall the audience</h2>
+                                </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-info">
+                                    <i class="entypo-location"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2 style="font-family: Comic Sans, Comic Sans MS, cursive; color: rgb(220,0,0);">Anu Aggarwal will deliver her talk</h2>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                    <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-danger">
+                                    <i class="entypo-feather"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2>A game of ‘Whoever has done it, sit down’ will be played</h2>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-secondary">
+                                    <i class="entypo-suitcase"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2 style="font-family: Comic Sans, Comic Sans MS, cursive; color: rgb(220,0,0);">Baisakhi Saha will deliver the talk</h2>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-info">
+                                    <i class="entypo-location"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2>An engaging game, ‘Crossword’, will be played</h2>
+                                </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-info">
+                                    <i class="entypo-location"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2>LUNCH</h2>
+                                </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-info">
+                                    <i class="entypo-location"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2>A pre-recorded TED talk will be showed to set the ball rolling for the next set of speakers</h2>
+                                </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-info">
+                                    <i class="entypo-location"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2 style="font-family: Comic Sans, Comic Sans MS, cursive; color: rgb(220,0,0);">Pankaj Risbood will deliver his talk</h2>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-info">
+                                    <i class="entypo-location"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2>A dance performance to enthrall the audience</h2>
+                                </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-info">
+                                    <i class="entypo-location"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2>Snacks!</h2>
+                                </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-info">
+                                    <i class="entypo-location"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2 style="font-family: Comic Sans, Comic Sans MS, cursive; color: rgb(220,0,0);">Naman Ahluwalia will deliver his talk</h2>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-info">
+                                    <i class="entypo-location"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2>The host will introduce the last speaker</h2>
+                                </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-info">
+                                    <i class="entypo-location"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2 style="font-family: Comic Sans, Comic Sans MS, cursive; color: rgb(220,0,0);">Kanishk Priyadarshi will deliver his talk</h2>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-info">
+                                    <i class="entypo-location"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2>TEDxIGDTU’19 comes to an end</h2>
+                                </div>
+                        </article>
+                        </div>
+                    </div>
+                </div>
+                <!----Code------end----------------------------------->
+            </div>
+            <!-- /.container -->
+           
+    <!--- Footer -->
+    <footer>
+        <div class="container-fluid padding" id="contact">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h2 class="display-4 animated slow delay-1s flipInX">Contact</h2>
+                </div>
+                <div class="col-12 social animated slow delay-1s zoomInDown">
+                    <a href="https://www.facebook.com/TEDxIGDTU/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/tedx_igdtu?utm_source=ig_profile_share&igshid=yzz49l19aes9" target="_blank"><i class="fab fa-instagram" ></i></a>
+                    <a href="https://www.linkedin.com/company/tedxigdtu" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 text-center">
+            <hr class="light-100">
+            <h6 class="last animated slow delay-1s slideInUp">This independent TEDx event is operated under license from TED.</h6>
+        </div>
+    </footer>
+
+    <a href="javascript:" id="return-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- jQuery -->
+    <script src="http://www.tutorialspoint.com/bootstrap/scripts/jquery.min.js">
+    </script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="http://www.tutorialspoint.com/bootstrap/js/bootstrap.min.js">
+    </script>
+    
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 50) { 
+                $('#return-to-top').fadeIn(200);  
+            } else {
+                $('#return-to-top').fadeOut(200); 
+            }
+        });
+        $('#return-to-top').click(function() { 
+            $('body,html').animate({
+                scrollTop : 0                
+            }, 500);
+        });
+    </script>
+
+</body>
+</html>
